@@ -46,7 +46,7 @@ export default function ComplexHeader({
   };
 
   function clickHandler() {
-    alert("test");
+    setMobileMenuOpen(true);
   }
 
   return (
@@ -94,7 +94,7 @@ export default function ComplexHeader({
           </Link>
         </div>
       </nav>
-      {/* <Dialog
+      <Dialog
         as="div"
         className="lg:hidden"
         open={mobileMenuOpen}
@@ -150,7 +150,7 @@ export default function ComplexHeader({
             </div>
           </div>
         </Dialog.Panel>
-          </Dialog> */}
+      </Dialog>
     </header>
   );
 }

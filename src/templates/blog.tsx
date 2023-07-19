@@ -35,7 +35,7 @@ export const config: TemplateConfig = {
       "blogStarter_keywords",
     ],
     filter: {
-      entityTypes: ["ce_blog"],
+      entityTypes: ["blogStarter_blog"],
     },
     localization: {
       locales: ["en"],
@@ -93,7 +93,7 @@ export default function Blog({ document }: TemplateProps) {
           verticalOnMobile="false"
         >
           <Snippet
-            text={document.c_blogAuthor}
+            text={document.blogStarter_blogAuthor}
             textColor="#929191"
             fontWeight="light"
             textSize="base"
@@ -110,7 +110,7 @@ export default function Blog({ document }: TemplateProps) {
           src={document.primaryPhoto.image.url}
           alt={document.primaryPhoto.image.alternateText}
         />
-        <MarkdownContent content={document.c_body.markdown} />
+        <MarkdownContent content={document.blogStarter_body.markdown} />
       </ArticleContainer>
       <Footer
         label1="Privacy"

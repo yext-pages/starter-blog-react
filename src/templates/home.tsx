@@ -15,7 +15,7 @@ import Title from "../components/Title";
 import VerticalStack from "../components/VerticalStack";
 import "../index.css";
 import FeaturedBlog from "../components/FeaturedBlog";
-import { C_featuredBlogs } from "../types/autogen";
+import { BlogStarter_featuredBlogs } from "../types/autogen";
 import ComplexHeader from "../components/ComplexHeader";
 
 export const config: TemplateConfig = {
@@ -36,7 +36,7 @@ export const config: TemplateConfig = {
       "blogStarter_featuredBlogs.blogStarter_description",
       "blogStarter_featuredBlogs.datePosted",
     ],
-    filter: { entityTypes: ["ce_homePage"] },
+    filter: { entityTypes: ["blogStarter_homePage"] },
   },
 };
 export const getPath: GetPath<TemplateProps> = () => {
@@ -79,8 +79,8 @@ export default function Home({ document }: TemplateProps) {
           alignment="left"
         >
           <BigImage
-            src={document.c_coverPhoto.image.url}
-            alt={document.c_coverPhoto.image.alternateText}
+            src={document.blogStarter_coverPhoto.image.url}
+            alt={document.blogStarter_coverPhoto.image.alternateText}
           />
           <Title
             value="Featured Articles"
@@ -90,14 +90,14 @@ export default function Home({ document }: TemplateProps) {
             bottomMargin="0"
             textColor="#000000"
           />
-          {document.c_featuredBlogs.map(
-            (item: C_featuredBlogs, index: string) => (
+          {document.blogStarter_featuredBlogs.map(
+            (item: BlogStarter_featuredBlogs, index: string) => (
               <FeaturedBlog
                 name={item.name}
                 slug={item.slug}
-                src={item.c_coverPhoto?.image.url}
-                alt={item.c_coverPhoto?.image.alternateText}
-                c_description={item.c_description}
+                src={item.blogStarter_coverPhoto?.image.url}
+                alt={item.blogStarter_coverPhoto?.image.alternateText}
+                blogStarter_description={item.blogStarter_description}
                 datePosted={item.datePosted}
                 key={index}
                 textColor="#000000"

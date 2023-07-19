@@ -24,28 +24,28 @@ export interface BlogType {
   slug: string;
   datePosted: string;
   primaryPhoto: ComplexImage;
-  c_body: any;
-  c_blogAuthor: string;
-  c_description: string;
-  c_metaDescription: string;
-  c_keywords: string;
+  blogStarter_body: any;
+  blogStarter_blogAuthor: string;
+  blogStarter_description: string;
+  blogStarter_metaDescription: string;
+  blogStarter_keywords: string;
 }
 
-export interface C_featuredBlogs {
+export interface BlogStarter_featuredBlogs {
   id?: string;
   name?: string;
   slug?: string;
-  c_coverPhoto?: ComplexImage;
-  c_description?: string;
+  blogStarter_coverPhoto?: ComplexImage;
+  blogStarter_description?: string;
   datePosted?: string;
 }
 
 export interface Home {
   id: string;
   name: string;
-  c_coverPhoto: ComplexImage;
-  c_heading: string;
-  c_subHeading: string;
+  blogStarter_coverPhoto: ComplexImage;
+  blogStarter_heading: string;
+  blogStarter_subHeading: string;
   slug: string;
-  c_featuredBlogs: C_featuredBlogs[];
+  blogStarter_featuredBlogs: BlogStarter_featuredBlogs[];
 }

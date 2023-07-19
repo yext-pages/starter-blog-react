@@ -12,7 +12,7 @@ interface FeaturedBlogProps {
   slug?: string;
   src?: string;
   alt?: string;
-  c_description?: string;
+  blogStarter_description?: string;
   datePosted?: string;
   textColor: HexColor;
 }
@@ -22,7 +22,7 @@ const FeaturedBlog = ({
   slug,
   src,
   alt,
-  c_description,
+  blogStarter_description,
   datePosted,
   textColor,
 }: FeaturedBlogProps) => {
@@ -66,7 +66,7 @@ const FeaturedBlog = ({
             textColor={textColor}
           />
           <Paragraph
-            value={c_description}
+            value={blogStarter_description}
             textSize="base"
             fontWeight="light"
             hiddenOnMobile={true}

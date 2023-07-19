@@ -1,0 +1,67 @@
+{
+  "$id": "5420670929450916491",
+  "$schema": "https://schema.yext.com/config/km/entity/v1",
+  "primaryLocale": "en",
+  "content": {
+    "c_body": {
+      "markdown": "# Lower East Side: Tenements and Tabletops \n\nThe Lower East Side is a vibrant downtown neighborhood in New York City that has something for everyone. Whether you are interested in exploring the area\u0027s rich immigrant history or meeting up with friends at a trendy bar or restaurant, LES has plenty to offer. In this blog post, we will take a closer look at some of the neighborhood\u0027s top attractions.\n\n## Exploring the Lower East Side\n\nTo experience LES fully, start by wandering its streets, where you\u0027ll find synagogues and museums among plenty of other landmarks. For instance, one can visit The Tenement Museum which offers a glimpse into the lives of working-class immigrants who lived there during 19th century USA.\n\n You can also check out photographic exhibitions at International Center for Photography to get inspiration about urban life and culture around the city throughout different eras.\n\n Don\u0027t miss the chance to visit New Museum – housed inside one of Manhattan\u0027s most distinctively designed new buildings near Bowery Subway Station - featuring contemporary artists from all over the world showcasing their art pieces through innovative designs and modern technologies.\n\n\n## The History of Tenements \n\nIn addition to these landmarks, tenement buildings are an essential part of LES history as well. A walk along Orchard Street will bring you face-to-face with many of them; they served as home to many immigrants arriving here from Europe back in 1800s-1900s seeking better lives on American soil.\n\nThese structures once served as cramped housing but have since been converted into stylish apartments full of modern amenities. Even though these old buildings have been updated extensively over time still they show historical footprints left behind - it is easy to visualize how residents lived decades ago.\n\n\n\n## Bringing Tabletop Games to Life\n\nHungry? LES offers various trendy dining options serving wide ranges from comfort food such as pizza toppings (Scarr’s Pizza) prepared using only locally-sourced ingredients or food truck style meals at Katz\u0027s Deli to more refined dining at Russ \u0026 Daughters Cafe, which features a fantastic open-face-sandwich known as Smoked Salmon and Cream Cheese that must be tried.\n\nBut that’s not all, LES food options also cater to \"game-aficionados\" with many of restaurants providing tables featuring Board Games like Jenga and Scrabble for groups of friends to enjoy over the meal while creating lasting memories! \n\n## Uncovering Hidden Gems in LES\n\nAs you explore the neighborhood, don\u0027t forget to venture off the beaten path - there are plenty of hidden gems waiting to be discovered. Head down Rue B, where you will find bars with live music ranging from jazz and blues with intimate atmospheres perfect for taking in a show.\n\nIf markets are your thing, visit Essex Street Market or join an afternoon tour around Hester Street Fair where local entrepreneurs showcase their passions such as handmade jewellery items or vintage clothing line.\n\nWhether you want to take in some history or just have a fun night out with friends over pizza and board games - Lower East Side is full of experiences waiting for the adventurous traveler. And we have only scratched the surface: there is always something new and exciting popping up within this ever-evolving neighborhood so come on down – welcome home!"
+    },
+    "c_coverPhoto": {
+      "image": {
+        "height": 2001,
+        "sourceUrl": "https://images.unsplash.com/photo-1591096490931-c07a285f8068?ixlib\u003drb-4.0.3\u0026ixid\u003dM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\u0026auto\u003dformat\u0026fit\u003dcrop\u0026w\u003d3000\u0026q\u003d80",
+        "thumbnails": [
+          {
+            "height": 2001,
+            "url": "https://a.mktgcdn.com/p/X22JMtSbtXrnxBef_S9h8ZTPGgoaraYmsF3dYYpdJMg/3000x2001.jpg",
+            "width": 3000
+          },
+          {
+            "height": 1267,
+            "url": "https://a.mktgcdn.com/p/X22JMtSbtXrnxBef_S9h8ZTPGgoaraYmsF3dYYpdJMg/1900x1267.jpg",
+            "width": 1900
+          },
+          {
+            "height": 413,
+            "url": "https://a.mktgcdn.com/p/X22JMtSbtXrnxBef_S9h8ZTPGgoaraYmsF3dYYpdJMg/619x413.jpg",
+            "width": 619
+          },
+          {
+            "height": 400,
+            "url": "https://a.mktgcdn.com/p/X22JMtSbtXrnxBef_S9h8ZTPGgoaraYmsF3dYYpdJMg/600x400.jpg",
+            "width": 600
+          },
+          {
+            "height": 131,
+            "url": "https://a.mktgcdn.com/p/X22JMtSbtXrnxBef_S9h8ZTPGgoaraYmsF3dYYpdJMg/196x131.jpg",
+            "width": 196
+          }
+        ],
+        "url": "https://a.mktgcdn.com/p/X22JMtSbtXrnxBef_S9h8ZTPGgoaraYmsF3dYYpdJMg/3000x2001.jpg",
+        "width": 3000
+      }
+    },
+    "c_description": "\"Explore Lower East Side tenements and tabletops in this captivating blog.\"",
+    "c_keywords": "Lower East Side, Tenements, Tabletops, Explore, Captivating Blog.",
+    "c_landmarks": [
+      "Tenement Museum",
+      "International Center for Photography",
+      "New Museum"
+    ],
+    "c_metaDescription": "Explore the vibrant and historic Lower East Side through our travel blog: \"Lower East Side: Tenements and Tabletops.\" Discover the best places to eat, drink, and explore in this iconic New York City neighborhood.",
+    "c_neighborhoodDescription": "This vibrant downtown neighborhood is a popular nightlife destination—its streets are lined with trendy places to drink, dance and hear live music. Many of the area’s synagogues, museums and restaurants serve as reminders of its immigrant history.",
+    "c_neighborhoodName": "Lower East Side",
+    "c_neighborhoodNickname": "LES",
+    "c_restaurants": [
+      "Scarr\u0027s Pizza",
+      "Katz\u0027s Deli",
+      "Russ \u0026 Daughters Cafe"
+    ],
+    "datePosted": "2023-06-14",
+    "name": "Lower East Side: Tenements and Tabletops",
+    "slug": "lower-east-side"
+  },
+  "entityType": "ce_blog",
+  "folder": "yext/root",
+  "labels": []
+}

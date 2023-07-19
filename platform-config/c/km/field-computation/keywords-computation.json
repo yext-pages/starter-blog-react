@@ -1,0 +1,13 @@
+{
+  "$id": "c_keywords-computation",
+  "$schema": "https://schema.yext.com/config/km/field-computation/v1",
+  "field": "c_keywords",
+  "computationMethod": "genericDescription",
+  "systemControlled": false,
+  "inputs": {
+    "additionalInstructions": "The description should only consist of a list of six (6) keywords or keyword phrases, separated by commas. ",
+    "maxLength": "10 words.",
+    "subjectDetails": "Write a comma-delimited list of 6 keywords or keyword phrases, summarizing this article:\n[[name]]\n[[c_description]]",
+    "subjectType": "List of keywords."
+  }
+}

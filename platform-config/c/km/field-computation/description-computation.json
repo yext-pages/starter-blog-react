@@ -1,0 +1,12 @@
+{
+  "$id": "c_description-computation",
+  "$schema": "https://schema.yext.com/config/km/field-computation/v1",
+  "field": "c_description",
+  "computationMethod": "genericDescription",
+  "systemControlled": false,
+  "inputs": {
+    "maxLength": "12 words",
+    "subjectDetails": "[[name]]",
+    "subjectType": "Blog Description"
+  }
+}

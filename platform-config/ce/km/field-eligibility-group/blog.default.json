@@ -1,0 +1,21 @@
+{
+  "$id": "ce_blog.default",
+  "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
+  "name": "Blog-default",
+  "entityType": "ce_blog",
+  "fields": [
+    "c_body",
+    "c_coverPhoto",
+    "c_description",
+    "c_keywords",
+    "c_landmarks",
+    "c_metaDescription",
+    "c_neighborhoodDescription",
+    "c_neighborhoodName",
+    "c_neighborhoodNickname",
+    "c_restaurants",
+    "datePosted",
+    "slug"
+  ],
+  "required": []
+}

@@ -1,21 +1,28 @@
-import * as React from "react";
-import "../index.css";
 import {
-  GetPath,
-  TemplateProps,
-  TemplateRenderProps,
   GetHeadConfig,
+  GetPath,
   HeadConfig,
   TemplateConfig,
+  TemplateProps,
+  TemplateRenderProps,
 } from "@yext/pages";
-import { Image } from "@yext/pages/components";
-import Main from "../components/layouts/Main";
-import Container from "../components/Container";
-import { formatDate } from "../utils/formatDate";
+import React from "react";
+import BigImage from "../components/BigImage";
+import CenteredContainer from "../components/CenteredContainer";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import MainLayout from "../components/MainLayout";
+import Title from "../components/Title";
+import VerticalStack from "../components/VerticalStack";
+import "../index.css";
+import FeaturedBlog from "../components/FeaturedBlog";
+import { C_featuredBlogs } from "../types/autogen";
+import ComplexHeader from "../components/ComplexHeader";
 
 export const config: TemplateConfig = {
   stream: {
     $id: "home",
+    localization: { locales: ["en"], primary: false },
     fields: [
       "id",
       "name",
@@ -30,18 +37,11 @@ export const config: TemplateConfig = {
       "c_featuredBlogs.c_description",
       "c_featuredBlogs.datePosted",
     ],
-    filter: {
-      entityTypes: ["ce_homePage"],
-    },
-    localization: {
-      locales: ["en"],
-      primary: false,
-    },
+    filter: { entityTypes: ["ce_homePage"] },
   },
 };
-
 export const getPath: GetPath<TemplateProps> = () => {
-  return `index.html`;
+  return "index.html";
 };
 
 export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (
@@ -54,93 +54,72 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (
   };
 };
 
-const Home = ({ document }: TemplateRenderProps) => {
-  const { c_coverPhoto, c_heading, c_subHeading, c_featuredBlogs } = document;
-
+export default function Home({ document }: TemplateProps) {
   return (
-    <Main>
-      <Container>
-        <div>
-          <div className="flex flex-col border-b border-gray-200 lg:border-0">
-            <nav aria-label="Offers" className="order-last lg:order-first">
-              <div className="mx-auto max-w-7xl lg:px-8"></div>
-            </nav>
-            <div className="relative">
-              <div
-                aria-hidden="true"
-                className="absolute hidden h-full w-1/2 lg:block"
+    <MainLayout backgroundColor="#FFFFFF">
+      <ComplexHeader
+        backgroundColor="#FFFFFF"
+        textColor="#000000"
+        logo="https://a.mktgcdn.com/p/Y-dxorWO3d3dNLcW0aW6ht5grsUUTyxMwFGzL-4k0GQ/300x300.png"
+        link1="#"
+        link2="#"
+        link3="#"
+        label1="About"
+        label2="Membership"
+        label3="Contribute"
+        companyScreenReaderText="Yext"
+        hoverColor="light"
+      />
+      <CenteredContainer>
+        <VerticalStack
+          spacing="8"
+          topMargin="10"
+          bottomMargin="10"
+          leftMargin="2"
+          rightMargin="2"
+          alignment="left"
+        >
+          <BigImage
+            src={document.c_coverPhoto.image.url}
+            alt={document.c_coverPhoto.image.alternateText}
+          />
+          <Title
+            value="Featured Articles"
+            fontWeight="bold"
+            textSize="4xl"
+            topMargin="0"
+            bottomMargin="0"
+            textColor="#000000"
+          />
+          {document.c_featuredBlogs.map(
+            (item: C_featuredBlogs, index: string) => (
+              <FeaturedBlog
+                name={item.name}
+                slug={item.slug}
+                src={item.c_coverPhoto?.image.url}
+                alt={item.c_coverPhoto?.image.alternateText}
+                c_description={item.c_description}
+                datePosted={item.datePosted}
+                key={index}
+                textColor="#000000"
               />
-              <div className="relative bg-gray-100 lg:bg-transparent">
-                <div className="mx-auto max-w-7xl bg-gradient-to-t from-gray-700 via-gray-900 to-black px-4  sm:px-6 lg:grid lg:grid-cols-2 lg:px-8">
-                  <div className="mx-auto max-w-2xl py-24  lg:max-w-none lg:py-64">
-                    <div className="lg:pr-16">
-                      <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl xl:text-6xl">
-                        {c_heading}
-                      </h1>
-                      <p className="mt-4 text-xl text-white">{c_subHeading}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {c_coverPhoto && (
-                <div className="h-48 w-full sm:h-64 lg:absolute lg:right-0 lg:top-0 lg:h-full lg:w-1/2">
-                  <Image
-                    image={c_coverPhoto}
-                    className="h-full w-full object-cover object-center"
-                  />
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-        <div className="bg-white py-24 sm:py-32">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl lg:max-w-4xl">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Neighborhoods
-              </h2>
-              <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
-                {c_featuredBlogs?.map((blog) => (
-                  <article
-                    key={blog.id}
-                    className="relative isolate flex flex-col gap-8 lg:flex-row"
-                  >
-                    {blog && (
-                      <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
-                        <Image
-                          image={blog.c_coverPhoto}
-                          className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
-                        />
-                        <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
-                      </div>
-                    )}
-                    <div>
-                      <div className="flex items-center gap-x-4 text-xs">
-                        <span className="text-gray-500">
-                          {formatDate(blog.datePosted)}
-                        </span>
-                      </div>
-                      <div className="group relative max-w-xl">
-                        <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                          <a href={blog.slug}>
-                            <span className="absolute inset-0" />
-                            {blog.name}
-                          </a>
-                        </h3>
-                        <p className="mt-5 text-sm leading-6 text-gray-600">
-                          {blog.c_description}
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </Container>
-    </Main>
+            )
+          )}
+        </VerticalStack>
+      </CenteredContainer>
+      <Footer
+        label1="Privacy"
+        link1="#"
+        label2="Terms"
+        link2="#"
+        label3="Settings"
+        link3="#"
+        label4="Help"
+        link4="#"
+        backgroundColor="#FFFFFF"
+        textColor="#000000"
+        hoverColor="light"
+      />
+    </MainLayout>
   );
-};
-
-export default Home;
+}

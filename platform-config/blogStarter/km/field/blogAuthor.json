@@ -1,0 +1,15 @@
+{
+  "$id": "blogStarter_blogAuthor",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "Author of the blog post.",
+  "displayName": "Blog Author",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "stringType": {
+      "stereotype": "SIMPLE",
+      "maxLength": 100000
+    }
+  },
+  "typeId": "string"
+}

@@ -1,0 +1,69 @@
+{
+  "$id": "blogStarter_blog",
+  "$schema": "https://schema.yext.com/config/km/field-presentation/v1",
+  "entityType": "blogStarter_blog",
+  "displayName": "Blog",
+  "presentationEntries": [
+    {
+      "displayName": "Content",
+      "entryType": "DIVIDER"
+    },
+    {
+      "displayName": "Core Information",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "name",
+          "visibleOnAdd": true
+        },
+        {
+          "id": "entityId",
+          "visibleOnAdd": true
+        },
+        {
+          "id": "datePosted"
+        },
+        {
+          "id": "slug"
+        },
+        {
+          "id": "blogStarter_coverPhoto"
+        },
+        {
+          "id": "blogStarter_body"
+        },
+        {
+          "id": "blogStarter_description"
+        },
+        {
+          "id": "blogStarter_metaDescription"
+        },
+        {
+          "id": "blogStarter_keywords"
+        },
+        {
+          "id": "blogStarter_blogAuthor"
+        },
+        {
+          "id": "primaryPhoto"
+        }
+      ]
+    },
+    {
+      "displayName": "Other",
+      "entryType": "DIVIDER"
+    },
+    {
+      "displayName": "Internal Use Only",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "folder"
+        },
+        {
+          "id": "labels"
+        }
+      ]
+    }
+  ]
+}

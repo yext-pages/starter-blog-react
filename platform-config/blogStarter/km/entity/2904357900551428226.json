@@ -1,0 +1,79 @@
+{
+  "$id": "2904357900551428226",
+  "$schema": "https://schema.yext.com/config/km/entity/v1",
+  "primaryLocale": "en",
+  "content": {
+    "blogStarter_blogAuthor": "DJ Corbett",
+    "blogStarter_body": {
+      "markdown": "Welcome foodies and travelers alike, to our latest edition of *A Bite of the Big Apple*.\n\nIn this post, we will be exploring the vibrant neighborhood of Chelsea, located in the heart of Manhattan. Chelsea takes its name from a Georgian-style house that was owned by retired British Major Thomas Clarke. The estate was passed down through generations until it became the neighborhood it is today. The area is full of rich history and is home to some must-see landmarks.\n\n### Chelsea: An NYC Gem\nChelsea boasts an incredible art scene that visitors should not miss out on. One famous landmark worth checking out is The High Line—an abandoned elevated railway track turned into a public park with stunning views along the way. Visitors can take a walk through this unique park while taking in views of the Hudson River and admiring many public art installations along their journey.\n\nBut landmarks are not just reserved for outdoor spaces... Some indoor venues are equally impressive, such as Chelsea Market—home to several artisanal food vendors, cafes, and shops like Ronnybrook Dairy Farms for delicious milkshakes or Fat Witch Bakery’s delectable brownies. Visitors should definitely spend time perusing through all this market has to offer.\n\n### Art and Culture Scene\nAs mentioned above, Chelsea has an excellent art scene that caters both to established names as well as up-and-coming artists wanting exposure for their works. One must-see destination for any art lover would be Gagosian Gallery\u0027s location in W 21st St., which houses contemporary artwork from groundbreaking artists like Jeff Koons. Hundreds more galleries line up 10th Ave alone where you can find contemporary photography at Benrubi Gallery or MACCARONEs sculptures.\n\nIf you\u0027re looking for something more interactive when it comes to cultural experiences then investigate Visiting Drake\u0027s Apartment/Mansion place on West 23rd Street which doubles as a museum exhibiting African American culture spread around different floors or The Rubin Museum of Art, that explores the rich history and art of the Himalayan region where visitors can participate in contemplative activities, meditation sessions, and tours.\n\n### Culinary Delights of Chelsea\nPerhaps the most exciting aspect of visiting any new town is trying out delicious local cuisine. Visitors to Chelsea are spoilt for choice when it comes to culinary experiences. Start with a traditional American brunch at Cookshop which serves up perfect eggs benedict\u0027s or chicken paillard (grilled/sauté-ed chicken breast). Next venture towards Hav \u0026 Mar seafood restaurant which offers an authentic taste of Spanish Basque Country cuisine with dishes like cod confit salad or garlic shrimp called gambas al ajillo marinated in white wine. Lastly, check out Ovest Pizzoteca for some world-renowned Neapolitan pizzas that will leave you wanting more!\n\n### Outdoor Adventures in the City\nThe best way to explore New York City is on foot! Taking a walk along the streets lined with brick buildings and bustling shops is always captivating but if you want some fresh air Chelsea offers plenty of opportunities outdoors too.\n\nThe Hudson River Park located on the waterfront (one popular spot being Pier 46) provides stunning views over Jersey City as residents jog past on their afternoon runs/rides kayakers paddling around near sunset time but what captivates me personally are sunset strolls down The High Line where you can see all sorts of vibrant flowers/plants surrounded by historic buildings after grabbing food inside Chelsea Market.\n\nIn conclusion, whether it\u0027s exploring art galleries/artifacts or indulging in unique food experiences - there\u0027s something for everyone here! We\u0027ve only scratched the surface regarding things to do while visiting this New York neighborhood by highlighting popular landmarks such as The High Line and Chelsea Market so we encourage people interested in further exploration towards all these restaurants mentioned to move forward hereafter. Its neighborhood-nicknamed \"The Big Apple\" will leave you wanting to stay longer, so be sure to spend at least a few days here!"
+    },
+    "blogStarter_coverPhoto": {
+      "image": {
+        "height": 1481,
+        "thumbnails": [
+          {
+            "height": 1481,
+            "url": "http://a.mktgcdn.com/p/axidqOu5Fs65SndPmDmDxdUs0cWQzSYQHOWrnzKq6wY/987x1481.jpg",
+            "width": 987
+          },
+          {
+            "height": 929,
+            "url": "http://a.mktgcdn.com/p/axidqOu5Fs65SndPmDmDxdUs0cWQzSYQHOWrnzKq6wY/619x929.jpg",
+            "width": 619
+          },
+          {
+            "height": 450,
+            "url": "http://a.mktgcdn.com/p/axidqOu5Fs65SndPmDmDxdUs0cWQzSYQHOWrnzKq6wY/300x450.jpg",
+            "width": 300
+          },
+          {
+            "height": 294,
+            "url": "http://a.mktgcdn.com/p/axidqOu5Fs65SndPmDmDxdUs0cWQzSYQHOWrnzKq6wY/196x294.jpg",
+            "width": 196
+          }
+        ],
+        "url": "http://a.mktgcdn.com/p/axidqOu5Fs65SndPmDmDxdUs0cWQzSYQHOWrnzKq6wY/987x1481.jpg",
+        "width": 987
+      }
+    },
+    "blogStarter_description": "Looking for an exciting travel adventure? Check out \"A Bite of the Big Apple: Chelsea Edition\" travel blog, and discover the best places to visit in Chelsea. From trendy cafes to art galleries and boutiques, this guide is perfect for any traveler looking for an immersive experience in one of New York\u0027s most vibrant neighborhoods. Let us take you on a journey through Chelsea with insider tips, recommendations, and stunning photography!",
+    "blogStarter_keywords": "Chelsea, NYC, Big Apple, Foodie Destination, Culture Hub, Landmarks.",
+    "blogStarter_metaDescription": "Looking for an exciting travel adventure? Check out A Bite of the Big Apple: Chelsea Edition travel blog, and discover the best places to visit in Chelsea. From trendy cafes to art galleries and boutiques, this guide is perfect for any traveler looking for an immersive experience in one of New York\u0027s most vibrant neighborhoods. Let us take you on a journey through Chelsea with insider tips, recommendations, and stunning photography!",
+    "datePosted": "2023-06-01",
+    "name": "A Bite of the Big Apple: Chelsea Edition",
+    "primaryPhoto": {
+      "image": {
+        "alternateText": "chelsea",
+        "height": 1481,
+        "sourceUrl": "https://a.mktgcdn.com/p/axidqOu5Fs65SndPmDmDxdUs0cWQzSYQHOWrnzKq6wY/987x1481.jpg",
+        "thumbnails": [
+          {
+            "height": 1481,
+            "url": "https://a.mktgcdn.com/p/axidqOu5Fs65SndPmDmDxdUs0cWQzSYQHOWrnzKq6wY/987x1481.jpg",
+            "width": 987
+          },
+          {
+            "height": 929,
+            "url": "https://a.mktgcdn.com/p/axidqOu5Fs65SndPmDmDxdUs0cWQzSYQHOWrnzKq6wY/619x929.jpg",
+            "width": 619
+          },
+          {
+            "height": 450,
+            "url": "https://a.mktgcdn.com/p/axidqOu5Fs65SndPmDmDxdUs0cWQzSYQHOWrnzKq6wY/300x450.jpg",
+            "width": 300
+          },
+          {
+            "height": 294,
+            "url": "https://a.mktgcdn.com/p/axidqOu5Fs65SndPmDmDxdUs0cWQzSYQHOWrnzKq6wY/196x294.jpg",
+            "width": 196
+          }
+        ],
+        "url": "https://a.mktgcdn.com/p/axidqOu5Fs65SndPmDmDxdUs0cWQzSYQHOWrnzKq6wY/987x1481.jpg",
+        "width": 987
+      }
+    },
+    "slug": "chelsea"
+  },
+  "entityType": "blogStarter_blog",
+  "labels": []
+}

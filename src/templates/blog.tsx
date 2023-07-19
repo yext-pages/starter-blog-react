@@ -13,7 +13,6 @@ import BigImage from "../components/BigImage";
 import ArticleContainer from "../components/ArticleContainer";
 import Title from "../components/Title";
 import MarkdownContent from "../components/MarkdownContent";
-import Header from "../components/Header";
 import HorizontalStack from "../components/HorizontalStack";
 import Snippet from "../components/Snippet";
 import HorizontalDivider from "../components/HorizontalDivider";
@@ -29,11 +28,11 @@ export const config: TemplateConfig = {
       "slug",
       "datePosted",
       "primaryPhoto",
-      "c_body",
-      "c_blogAuthor",
-      "c_description",
-      "c_metaDescription",
-      "c_keywords",
+      "blogStarter_body",
+      "blogStarter_blogAuthor",
+      "blogStarter_description",
+      "blogStarter_metaDescription",
+      "blogStarter_keywords",
     ],
     filter: {
       entityTypes: ["ce_blog"],

@@ -1,0 +1,12 @@
+{
+  "$id": "blogStarter_body",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "",
+  "displayName": "Body",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "markdownType": {}
+  },
+  "typeId": "markdown"
+}

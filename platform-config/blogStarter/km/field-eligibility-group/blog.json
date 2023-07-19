@@ -1,0 +1,18 @@
+{
+  "$id": "blogStarter_blog",
+  "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
+  "name": "Blog",
+  "entityType": "blogStarter_blog",
+  "fields": [
+    "blogStarter_blogAuthor",
+    "blogStarter_body",
+    "blogStarter_coverPhoto",
+    "blogStarter_description",
+    "blogStarter_keywords",
+    "blogStarter_metaDescription",
+    "datePosted",
+    "primaryPhoto",
+    "slug"
+  ],
+  "required": []
+}

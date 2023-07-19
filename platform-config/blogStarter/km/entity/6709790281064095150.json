@@ -1,0 +1,89 @@
+{
+  "$id": "6709790281064095150",
+  "$schema": "https://schema.yext.com/config/km/entity/v1",
+  "primaryLocale": "en",
+  "content": {
+    "blogStarter_blogAuthor": "DJ Corbett",
+    "blogStarter_body": {
+      "markdown": "New York City\u0027s Financial District, or \"FiDi\" as locals call it, is the birthplace of American finance. This historic neighborhood is home to Wall Street and other financial powerhouses that drive the global economy, making it a must-visit destination for anyone interested in high finance.\n\nWall Street itself got its name from the wall built by Dutch colonists in 1653 to protect their settlement from British invasion. It wasn\u0027t until the late 18th century that New York emerged as a major financial center thanks to Alexander Hamilton\u0027s creation of the Bank of New York and his advocacy for a strong national economy.\n\nToday, visitors can take walking tours that follow in Hamilton\u0027s footsteps and explore some of FiDi’s most iconic historic landmarks, including Trinity Church and Federal Hall National Memorial.\n\n### The Financial Powerhouses of New York\nFiDi is also home to many modern-day financial institutions such as JPMorgan Chase, Goldman Sachs, Morgan Stanley, Citigroup and more. These companies have helped solidify FiDi\u0027s place as one of the world’s leading financial centers.\n\nBut there are plenty more fascinating museums here where you can learn about money matters past and present beyond bank buildings. For example; The Museum of American Finance explores everything from banking history to current issues like cryptocurrency while on Wall Street itself visitors will find The House Of Morgan which tells how one family transformed banking over generations.\n\n### Inside the Stock Exchange\nOne landmark that should not be missed during your visit is a tour inside The New York Stock Exchange (NYSE). You\u0027ll get an insider\u0027s eye view showcasing market activity - but do note you need reservations far ahead for NYSE tours! Still want glimpses? Come by at market opening (currently at 9:30AM ET) when bell ringing signals exchange highs/lows giving visitors street side thrills snapping photos with famous folks investing/win big boards outside.\n\n### A Glimpse into Daily Life on Wall Street\nThough FiDi is known primarily for finance, it\u0027s not all business here. Once you finish your tour of the NYSE, head south down Broad Street and check out some of the many dining options in the area.\n\nFirst up let\u0027s talk mood lighting and inventive Margaritas;\\nis El Vez \u0026 Burrito Bar. Come by here a weekday lunch or dinner seven days per week destination growing dimly lit as night falls over Broad St’s iconic Federal hall \u0026 NY Stock Exchange buildings.\n\nA very different feel can be found nearby at Racines which has little to do with the stock market. This French restaurant offers seasonal dishes sourced from local farms and markets as well as sustainable wine selections crowd-pleasers from happy hour till late evening.\n\nAnd before you leave FiDi make time to enjoy Augustine- where Art Deco decor meets modern brasserie style dinning by famed restauranteur Keith McNally – c’est magnifique!"
+    },
+    "blogStarter_coverPhoto": {
+      "image": {
+        "height": 1380,
+        "thumbnails": [
+          {
+            "height": 1380,
+            "url": "http://a.mktgcdn.com/p/G_jLt9S27Dwyvf26th8ZsXNmCqXTgUh9TEuGfJxtkuo/2070x1380.jpg",
+            "width": 2070
+          },
+          {
+            "height": 1267,
+            "url": "http://a.mktgcdn.com/p/G_jLt9S27Dwyvf26th8ZsXNmCqXTgUh9TEuGfJxtkuo/1900x1267.jpg",
+            "width": 1900
+          },
+          {
+            "height": 413,
+            "url": "http://a.mktgcdn.com/p/G_jLt9S27Dwyvf26th8ZsXNmCqXTgUh9TEuGfJxtkuo/619x413.jpg",
+            "width": 619
+          },
+          {
+            "height": 400,
+            "url": "http://a.mktgcdn.com/p/G_jLt9S27Dwyvf26th8ZsXNmCqXTgUh9TEuGfJxtkuo/600x400.jpg",
+            "width": 600
+          },
+          {
+            "height": 131,
+            "url": "http://a.mktgcdn.com/p/G_jLt9S27Dwyvf26th8ZsXNmCqXTgUh9TEuGfJxtkuo/196x131.jpg",
+            "width": 196
+          }
+        ],
+        "url": "http://a.mktgcdn.com/p/G_jLt9S27Dwyvf26th8ZsXNmCqXTgUh9TEuGfJxtkuo/2070x1380.jpg",
+        "width": 2070
+      }
+    },
+    "blogStarter_description": "Looking to explore the financial heart of New York? Follow along with High Finance, a travel blog that explores the city\u0027s financial district. Get tips and insights on where to eat, where to stay, and what to see while immersing yourself in the bustling world of Wall Street. Join us for an unforgettable adventure through the Big Apple\u0027s most iconic neighborhood.",
+    "blogStarter_keywords": "NYC, financial district, exploration, high finance, heart.",
+    "blogStarter_metaDescription": "Looking to explore the financial heart of New York? Follow along with High Finance, a travel blog that explores the city\u0027s financial district. Get tips and insights on where to eat, where to stay, and what to see while immersing yourself in the bustling world of Wall Street. Join us for an unforgettable adventure through the Big Apple\u0027s most iconic neighborhood.",
+    "datePosted": "2023-06-12",
+    "name": "High Finance: Exploring the Heart of New York\u0027s Financial District",
+    "primaryPhoto": {
+      "image": {
+        "alternateText": "financial district",
+        "height": 1380,
+        "sourceUrl": "https://a.mktgcdn.com/p/G_jLt9S27Dwyvf26th8ZsXNmCqXTgUh9TEuGfJxtkuo/2070x1380.jpg",
+        "thumbnails": [
+          {
+            "height": 1380,
+            "url": "https://a.mktgcdn.com/p/G_jLt9S27Dwyvf26th8ZsXNmCqXTgUh9TEuGfJxtkuo/2070x1380.jpg",
+            "width": 2070
+          },
+          {
+            "height": 1267,
+            "url": "https://a.mktgcdn.com/p/G_jLt9S27Dwyvf26th8ZsXNmCqXTgUh9TEuGfJxtkuo/1900x1267.jpg",
+            "width": 1900
+          },
+          {
+            "height": 413,
+            "url": "https://a.mktgcdn.com/p/G_jLt9S27Dwyvf26th8ZsXNmCqXTgUh9TEuGfJxtkuo/619x413.jpg",
+            "width": 619
+          },
+          {
+            "height": 400,
+            "url": "https://a.mktgcdn.com/p/G_jLt9S27Dwyvf26th8ZsXNmCqXTgUh9TEuGfJxtkuo/600x400.jpg",
+            "width": 600
+          },
+          {
+            "height": 131,
+            "url": "https://a.mktgcdn.com/p/G_jLt9S27Dwyvf26th8ZsXNmCqXTgUh9TEuGfJxtkuo/196x131.jpg",
+            "width": 196
+          }
+        ],
+        "url": "https://a.mktgcdn.com/p/G_jLt9S27Dwyvf26th8ZsXNmCqXTgUh9TEuGfJxtkuo/2070x1380.jpg",
+        "width": 2070
+      }
+    },
+    "slug": "financial-district"
+  },
+  "entityType": "blogStarter_blog",
+  "labels": []
+}

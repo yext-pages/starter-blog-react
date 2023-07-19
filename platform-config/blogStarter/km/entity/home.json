@@ -1,0 +1,78 @@
+{
+  "$id": "home",
+  "$schema": "https://schema.yext.com/config/km/entity/v1",
+  "primaryLocale": "en",
+  "content": {
+    "blogStarter_coverPhoto": {
+      "image": {
+        "alternateText": "new york city",
+        "height": 1441,
+        "thumbnails": [
+          {
+            "height": 1441,
+            "url": "http://a.mktgcdn.com/p/J5qB-bn1fUoARkUX0W2N3-GUmiCmgAmgpLpfz2rPSHE/2008x1441.jpg",
+            "width": 2008
+          },
+          {
+            "height": 1363,
+            "url": "http://a.mktgcdn.com/p/J5qB-bn1fUoARkUX0W2N3-GUmiCmgAmgpLpfz2rPSHE/1900x1363.jpg",
+            "width": 1900
+          },
+          {
+            "height": 444,
+            "url": "http://a.mktgcdn.com/p/J5qB-bn1fUoARkUX0W2N3-GUmiCmgAmgpLpfz2rPSHE/619x444.jpg",
+            "width": 619
+          },
+          {
+            "height": 431,
+            "url": "http://a.mktgcdn.com/p/J5qB-bn1fUoARkUX0W2N3-GUmiCmgAmgpLpfz2rPSHE/600x431.jpg",
+            "width": 600
+          },
+          {
+            "height": 141,
+            "url": "http://a.mktgcdn.com/p/J5qB-bn1fUoARkUX0W2N3-GUmiCmgAmgpLpfz2rPSHE/196x141.jpg",
+            "width": 196
+          }
+        ],
+        "url": "https://a.mktgcdn.com/p/J5qB-bn1fUoARkUX0W2N3-GUmiCmgAmgpLpfz2rPSHE/2008x1441.jpg",
+        "width": 2008
+      }
+    },
+    "blogStarter_featuredBlogs": [
+      "5420670929450916491",
+      "6709790281064095150",
+      "2904357900551428226",
+      "3859073401283456134"
+    ],
+    "blogStarter_heading": "NYC Blog",
+    "blogStarter_subHeading": "Your guide to the best neighborhoods in The Big Apple.",
+    "logo": {
+      "image": {
+        "height": 300,
+        "thumbnails": [
+          {
+            "height": 300,
+            "url": "https://a.mktgcdn.com/p/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/300x300.png",
+            "width": 300
+          },
+          {
+            "height": 150,
+            "url": "https://a.mktgcdn.com/p/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/150x150.png",
+            "width": 150
+          },
+          {
+            "height": 94,
+            "url": "https://a.mktgcdn.com/p/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/94x94.png",
+            "width": 94
+          }
+        ],
+        "url": "https://a.mktgcdn.com/p/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/300x300.png",
+        "width": 300
+      }
+    },
+    "name": "Home",
+    "slug": "index.html"
+  },
+  "entityType": "ce_homePage",
+  "labels": []
+}

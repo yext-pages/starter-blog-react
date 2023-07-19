@@ -10,7 +10,6 @@ import React from "react";
 import BigImage from "../components/BigImage";
 import CenteredContainer from "../components/CenteredContainer";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
 import MainLayout from "../components/MainLayout";
 import Title from "../components/Title";
 import VerticalStack from "../components/VerticalStack";
@@ -26,16 +25,16 @@ export const config: TemplateConfig = {
     fields: [
       "id",
       "name",
-      "c_coverPhoto",
-      "c_heading",
-      "c_subHeading",
+      "blogStarter_coverPhoto",
+      "blogStarter_heading",
+      "blogStarter_subHeading",
       "slug",
-      "c_featuredBlogs.id",
-      "c_featuredBlogs.name",
-      "c_featuredBlogs.slug",
-      "c_featuredBlogs.c_coverPhoto",
-      "c_featuredBlogs.c_description",
-      "c_featuredBlogs.datePosted",
+      "blogStarter_featuredBlogs.id",
+      "blogStarter_featuredBlogs.name",
+      "blogStarter_featuredBlogs.slug",
+      "blogStarter_featuredBlogs.blogStarter_coverPhoto",
+      "blogStarter_featuredBlogs.blogStarter_description",
+      "blogStarter_featuredBlogs.datePosted",
     ],
     filter: { entityTypes: ["ce_homePage"] },
   },

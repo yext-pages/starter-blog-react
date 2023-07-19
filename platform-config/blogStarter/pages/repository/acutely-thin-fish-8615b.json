@@ -1,0 +1,6 @@
+{
+  "$id": "acutely-thin-fish-8615b",
+  "$schema": "https://schema.yext.com/config/pages/repository/v1",
+  "repoUrl": "github.com/yext-pages/blog-starter-${{businessId}}.com",
+  "templateRepo": "github.com/YextSolutions/starter-blog-react"
+}

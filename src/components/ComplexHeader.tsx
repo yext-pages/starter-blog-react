@@ -102,7 +102,7 @@ export default function ComplexHeader({
       >
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel
-          className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+          className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto p-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 lg:px-6"
           style={{ backgroundColor }}
         >
           <div className="flex items-center justify-between">

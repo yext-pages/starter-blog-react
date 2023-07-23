@@ -35,7 +35,7 @@ export interface BlogStarter_featuredBlogs {
   id?: string;
   name?: string;
   slug?: string;
-  blogStarter_coverPhoto?: ComplexImage;
+  primaryPhoto?: ComplexImage;
   blogStarter_description?: string;
   datePosted?: string;
 }

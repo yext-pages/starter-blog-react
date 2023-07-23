@@ -32,7 +32,7 @@ export const config: TemplateConfig = {
       "blogStarter_featuredBlogs.id",
       "blogStarter_featuredBlogs.name",
       "blogStarter_featuredBlogs.slug",
-      "blogStarter_featuredBlogs.blogStarter_coverPhoto",
+      "blogStarter_featuredBlogs.primaryPhoto",
       "blogStarter_featuredBlogs.blogStarter_description",
       "blogStarter_featuredBlogs.datePosted",
     ],
@@ -95,8 +95,8 @@ export default function Home({ document }: TemplateProps) {
               <FeaturedBlog
                 name={item.name}
                 slug={item.slug}
-                src={item.blogStarter_coverPhoto?.image.url}
-                alt={item.blogStarter_coverPhoto?.image.alternateText}
+                src={item.primaryPhoto?.image.url}
+                alt={item.primaryPhoto?.image.alternateText}
                 blogStarter_description={item.blogStarter_description}
                 datePosted={item.datePosted}
                 key={index}

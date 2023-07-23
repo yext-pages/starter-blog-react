@@ -58,9 +58,9 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (
   };
 };
 
-export default function Blog({ document }: TemplateProps) {
+export default function Blog({ document, __meta }: TemplateProps) {
   return (
-    <MainLayout>
+    <MainLayout templateData={{ __meta, document }} backgroundColor="#FFFFFF">
       <ComplexHeader
         backgroundColor="#FFFFFF"
         textColor="#000000"

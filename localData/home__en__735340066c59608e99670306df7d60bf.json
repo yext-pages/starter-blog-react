@@ -1,0 +1,99 @@
+{
+	"__": {
+		"entityPageSet": {
+			"plugin": {}
+		},
+		"name": "home",
+		"streamId": "home",
+		"templateType": "JS"
+	},
+	"blogStarter_coverPhoto": {
+		"image": {
+			"alternateText": "new york city",
+			"height": 1441,
+			"url": "http://a.mktgcdn.com/p-sandbox/J5qB-bn1fUoARkUX0W2N3-GUmiCmgAmgpLpfz2rPSHE/2008x1441.jpg",
+			"width": 2008
+		}
+	},
+	"blogStarter_featuredBlogs": [
+		{
+			"blogStarter_description": "Explore the vibrant and historic Lower East Side through our travel blog: \"Lower East Side: Tenements and Tabletops.\" Discover the best places to eat, drink, and explore in this iconic New York City neighborhood.",
+			"datePosted": "2023-06-14",
+			"id": "5420670929450916491",
+			"name": "Lower East Side: Tenements and Tabletops",
+			"primaryPhoto": {
+				"image": {
+					"alternateText": "lower east side",
+					"height": 2001,
+					"url": "http://a.mktgcdn.com/p-sandbox/611rPYYZdrCjRp6nUuiHz79cnmQz7TQC6SS8I1mKG9I/3000x2001.jpg",
+					"width": 3000
+				}
+			},
+			"slug": "lower-east-side"
+		},
+		{
+			"blogStarter_description": "Looking to explore the financial heart of New York? Follow along with High Finance, a travel blog that explores the city's financial district. Get tips and insights on where to eat, where to stay, and what to see while immersing yourself in the bustling world of Wall Street. Join us for an unforgettable adventure through the Big Apple's most iconic neighborhood.",
+			"datePosted": "2023-06-12",
+			"id": "6709790281064095150",
+			"name": "High Finance: Exploring the Heart of New York's Financial District",
+			"primaryPhoto": {
+				"image": {
+					"alternateText": "financial district",
+					"height": 1380,
+					"url": "http://a.mktgcdn.com/p-sandbox/G_jLt9S27Dwyvf26th8ZsXNmCqXTgUh9TEuGfJxtkuo/2070x1380.jpg",
+					"width": 2070
+				}
+			},
+			"slug": "financial-district"
+		},
+		{
+			"blogStarter_description": "Looking for an exciting travel adventure? Check out \"A Bite of the Big Apple: Chelsea Edition\" travel blog, and discover the best places to visit in Chelsea. From trendy cafes to art galleries and boutiques, this guide is perfect for any traveler looking for an immersive experience in one of New York's most vibrant neighborhoods. Let us take you on a journey through Chelsea with insider tips, recommendations, and stunning photography!",
+			"datePosted": "2023-06-01",
+			"id": "2904357900551428226",
+			"name": "A Bite of the Big Apple: Chelsea Edition",
+			"primaryPhoto": {
+				"image": {
+					"alternateText": "chelsea",
+					"height": 1481,
+					"url": "http://a.mktgcdn.com/p-sandbox/axidqOu5Fs65SndPmDmDxdUs0cWQzSYQHOWrnzKq6wY/987x1481.jpg",
+					"width": 987
+				}
+			},
+			"slug": "chelsea"
+		},
+		{
+			"blogStarter_description": "Discover the urban-chic vibe of Williamsburg through our travel blog. Follow us as we embark on an odyssey and uncover the hidden gems of this vibrant neighborhood. Get inspired to plan your own adventure with Williamsburg: An Odyssey of Urban Chic!",
+			"datePosted": "2023-05-24",
+			"id": "3859073401283456134",
+			"name": "Williamsburg: An Odyssey of Urban Chic",
+			"primaryPhoto": {
+				"image": {
+					"alternateText": "williamsburg",
+					"height": 1381,
+					"url": "http://a.mktgcdn.com/p-sandbox/QEuQG2q6h9NzM_ygSgO_MC7Fu1ImGeVDrJqqRM3MFdQ/2071x1381.jpg",
+					"width": 2071
+				}
+			},
+			"slug": "williamsburg"
+		}
+	],
+	"blogStarter_heading": "NYC Blog",
+	"blogStarter_subHeading": "Your guide to the best neighborhoods in The Big Apple.",
+	"businessId": 3226418,
+	"id": "home",
+	"key": "0:home:knowledgeGraph:43524551:en",
+	"locale": "en",
+	"meta": {
+		"entityType": {
+			"id": "blogStarter_homePage",
+			"uid": 124010
+		},
+		"locale": "en"
+	},
+	"name": "Home",
+	"siteDomain": "",
+	"siteId": 0,
+	"siteInternalHostName": "",
+	"slug": "index.html",
+	"uid": 43524551
+}

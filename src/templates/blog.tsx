@@ -19,6 +19,7 @@ import HorizontalDivider from "../components/HorizontalDivider";
 import Footer from "../components/Footer";
 import Date from "../components/Date";
 import ComplexHeader from "../components/ComplexHeader";
+import { AnalyticsProvider } from "@yext/pages/components";
 
 export const config: TemplateConfig = {
   stream: {
@@ -60,71 +61,76 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (
 
 export default function Blog({ document, __meta }: TemplateProps) {
   return (
-    <MainLayout templateData={{ __meta, document }} backgroundColor="#FFFFFF">
-      <ComplexHeader
-        backgroundColor="#FFFFFF"
-        textColor="#000000"
-        logo="https://a.mktgcdn.com/p/Y-dxorWO3d3dNLcW0aW6ht5grsUUTyxMwFGzL-4k0GQ/300x300.png"
-        link1="#"
-        link2="#"
-        link3="#"
-        label1="About"
-        label2="Membership"
-        label3="Contribute"
-        companyScreenReaderText="Yext"
-        hoverColor="light"
-      />
-      <ArticleContainer>
-        <Title
-          value={document.name}
-          textSize="4xl"
-          fontWeight="bold"
-          topMargin="0"
-          bottomMargin="0"
+    <MainLayout backgroundColor="#FFFFFF">
+      <AnalyticsProvider
+        templateData={{ document: document, __meta: __meta }}
+        enableDebugging={true}
+      >
+        <ComplexHeader
+          backgroundColor="#FFFFFF"
           textColor="#000000"
+          logo="https://a.mktgcdn.com/p/Y-dxorWO3d3dNLcW0aW6ht5grsUUTyxMwFGzL-4k0GQ/300x300.png"
+          link1="#"
+          link2="#"
+          link3="#"
+          label1="About"
+          label2="Membership"
+          label3="Contribute"
+          companyScreenReaderText="Yext"
+          hoverColor="light"
         />
-        <HorizontalStack
-          spacing="0"
-          leftMargin="0"
-          rightMargin="0"
-          topMargin="2"
-          bottomMargin="4"
-          alignment="center"
-          verticalOnMobile="false"
-        >
-          <Snippet
-            text={document.blogStarter_blogAuthor}
-            textColor="#929191"
-            fontWeight="light"
-            textSize="base"
+        <ArticleContainer>
+          <Title
+            value={document.name}
+            textSize="4xl"
+            fontWeight="bold"
+            topMargin="0"
+            bottomMargin="0"
+            textColor="#000000"
           />
-          <HorizontalDivider dividerHeight="4" dividerColor="#929191" />
-          <Date
-            textColor="#929191"
-            date={document.datePosted}
-            textSize="base"
-            fontWeight="light"
+          <HorizontalStack
+            spacing="0"
+            leftMargin="0"
+            rightMargin="0"
+            topMargin="2"
+            bottomMargin="4"
+            alignment="center"
+            verticalOnMobile="false"
+          >
+            <Snippet
+              text={document.blogStarter_blogAuthor}
+              textColor="#929191"
+              fontWeight="light"
+              textSize="base"
+            />
+            <HorizontalDivider dividerHeight="4" dividerColor="#929191" />
+            <Date
+              textColor="#929191"
+              date={document.datePosted}
+              textSize="base"
+              fontWeight="light"
+            />
+          </HorizontalStack>
+          <BigImage
+            src={document.primaryPhoto.image.url}
+            alt={document.primaryPhoto.image.alternateText}
           />
-        </HorizontalStack>
-        <BigImage
-          src={document.primaryPhoto.image.url}
-          alt={document.primaryPhoto.image.alternateText}
+          <MarkdownContent content={document.blogStarter_body.markdown} />
+        </ArticleContainer>
+        <Footer
+          label1="Privacy"
+          link1="#"
+          label2="Terms"
+          link2="#"
+          label3="Settings"
+          link3="#"
+          label4="Help"
+          link4="#"
+          backgroundColor="#FFFFFF"
+          textColor="#000000"
+          hoverColor="light"
         />
-        <MarkdownContent content={document.blogStarter_body.markdown} />
-      </ArticleContainer>
-      <Footer
-        label1="Privacy"
-        link1="#"
-        label2="Terms"
-        link2="#"
-        label3="Settings"
-        link3="#"
-        label4="Help"
-        link4="#"
-        backgroundColor="#FFFFFF"
-        textColor="#000000"
-        hoverColor="light"
-      />
+      </AnalyticsProvider>
     </MainLayout>
   );
 }

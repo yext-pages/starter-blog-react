@@ -9,7 +9,7 @@
     "features": "sites-config/features.json",
     "plugins": [
       {
-        "pluginName": "PagesGenerator",
+        "pluginName": "Generator",
         "sourceFiles": [
           {
             "root": "dist/plugin",
@@ -17,11 +17,11 @@
           },
           {
             "root": "dist",
-            "pattern": "assets/{server,static,renderer,render}/**/*{.js,.css}"
+            "pattern": "assets/{server,static,renderer}/**/*{.js,.css}"
           }
         ],
         "event": "ON_PAGE_GENERATE",
-        "functionName": "PagesGenerator"
+        "functionName": "Generate"
       }
     ]
   },
@@ -30,7 +30,7 @@
     "requiredFiles": ["package.json", "package-lock.json", ".npmrc"]
   },
   "buildArtifacts": {
-    "buildCmd": "npx pages build"
+    "buildCmd": "npm run build:local"
   },
   "livePreview": {
     "serveSetupCmd": "npm run features",

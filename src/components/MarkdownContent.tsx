@@ -1,4 +1,5 @@
 import { Markdown } from "@yext/react-components";
+import React from "react";
 
 interface MarkdownContentProps {
   content: string;

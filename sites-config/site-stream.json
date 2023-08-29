@@ -1,0 +1,12 @@
+{
+  "$id": "site-entity",
+  "filter": {
+    "entityIds": ["blogStarter_site-entity"]
+  },
+  "source": "knowledgeGraph",
+  "fields": ["blogStarter_headerLinks", "logo", "blogStarter_footerLinks"],
+  "localization": {
+    "locales": ["en"],
+    "primary": false
+  }
+}

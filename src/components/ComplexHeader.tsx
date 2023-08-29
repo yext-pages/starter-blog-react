@@ -16,6 +16,8 @@ export interface ComplexHeaderProps {
   label2: string;
   link3: string;
   label3: string;
+  link4: string;
+  label4: string;
   hoverColor: "dark" | "light";
 }
 
@@ -30,6 +32,8 @@ export default function ComplexHeader({
   label2,
   link3,
   label3,
+  link4,
+  label4,
   hoverColor,
 }: ComplexHeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -38,6 +42,7 @@ export default function ComplexHeader({
     { name: label1, href: link1 },
     { name: label2, href: link2 },
     { name: label3, href: link3 },
+    { name: label4, href: link4 },
   ];
 
   const hoverColorVariants = {
@@ -85,13 +90,6 @@ export default function ComplexHeader({
               {item.name}
             </Link>
           ))}
-          <Link
-            url="#"
-            tailwindClasses={`rounded-lg px-4 py-2 text-sm font-semibold leading-6 ${hoverColorVariants[hoverColor]}`}
-            textColor={textColor}
-          >
-            Log in <span aria-hidden="true">&rarr;</span>
-          </Link>
         </div>
       </nav>
       <Dialog

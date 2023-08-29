@@ -69,14 +69,16 @@ export default function Blog({ document, __meta }: TemplateProps) {
         <ComplexHeader
           backgroundColor="#FFFFFF"
           textColor="#000000"
-          logo="https://a.mktgcdn.com/p/Y-dxorWO3d3dNLcW0aW6ht5grsUUTyxMwFGzL-4k0GQ/300x300.png"
-          link1="#"
-          link2="#"
-          link3="#"
-          label1="About"
-          label2="Membership"
-          label3="Contribute"
-          companyScreenReaderText="Yext"
+          logo={document._site.logo.image.url}
+          link1={document._site.blogStarter_headerLinks[0].uRL}
+          link2={document._site.blogStarter_headerLinks[1].uRL}
+          link3={document._site.blogStarter_headerLinks[2].uRL}
+          link4={document._site.blogStarter_headerLinks[3].uRL}
+          label1={document._site.blogStarter_headerLinks[0].label}
+          label2={document._site.blogStarter_headerLinks[1].label}
+          label3={document._site.blogStarter_headerLinks[2].label}
+          label4={document._site.blogStarter_headerLinks[3].label}
+          companyScreenReaderText={document._site.logo.image.alternateText}
           hoverColor="light"
         />
         <ArticleContainer>
@@ -118,14 +120,14 @@ export default function Blog({ document, __meta }: TemplateProps) {
           <MarkdownContent content={document.blogStarter_body.markdown} />
         </ArticleContainer>
         <Footer
-          label1="Privacy"
-          link1="#"
-          label2="Terms"
-          link2="#"
-          label3="Settings"
-          link3="#"
-          label4="Help"
-          link4="#"
+          link1={document._site.blogStarter_footerLinks[0].uRL}
+          link2={document._site.blogStarter_footerLinks[1].uRL}
+          link3={document._site.blogStarter_footerLinks[2].uRL}
+          link4={document._site.blogStarter_footerLinks[3].uRL}
+          label1={document._site.blogStarter_footerLinks[0].label}
+          label2={document._site.blogStarter_footerLinks[1].label}
+          label3={document._site.blogStarter_footerLinks[2].label}
+          label4={document._site.blogStarter_footerLinks[3].label}
           backgroundColor="#FFFFFF"
           textColor="#000000"
           hoverColor="light"

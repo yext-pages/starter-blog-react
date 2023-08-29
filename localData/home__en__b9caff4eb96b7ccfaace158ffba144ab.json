@@ -7,6 +7,62 @@
 		"streamId": "home",
 		"templateType": "JS"
 	},
+	"_site": {
+		"blogStarter_footerLinks": [
+			{
+				"label": "Privacy",
+				"uRL": "https://yext.com"
+			},
+			{
+				"label": "Terms",
+				"uRL": "https://yext.com"
+			},
+			{
+				"label": "Settings",
+				"uRL": "https://yext.com"
+			},
+			{
+				"label": "Help",
+				"uRL": "https://yext.com"
+			}
+		],
+		"blogStarter_headerLinks": [
+			{
+				"label": "About",
+				"uRL": "https://yext.com"
+			},
+			{
+				"label": "Membership",
+				"uRL": "https://yext.com"
+			},
+			{
+				"label": "Contribute",
+				"uRL": "https://yext.com"
+			},
+			{
+				"label": "Login",
+				"uRL": "https://yext.com"
+			}
+		],
+		"id": "blogStarter_site-entity",
+		"logo": {
+			"description": "Company Logo",
+			"image": {
+				"alternateText": "company logo",
+				"height": 300,
+				"url": "https://a.mktgcdn.com/p-sandbox/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/300x300.png",
+				"width": 300
+			}
+		},
+		"meta": {
+			"entityType": {
+				"id": "blogStarter_site",
+				"uid": 129321
+			},
+			"locale": "en"
+		},
+		"uid": 45379957
+	},
 	"blogStarter_coverPhoto": {
 		"image": {
 			"alternateText": "new york city",
@@ -79,14 +135,14 @@
 	],
 	"blogStarter_heading": "NYC Blog",
 	"blogStarter_subHeading": "Your guide to the best neighborhoods in The Big Apple.",
-	"businessId": 3226418,
+	"businessId": 3221574,
 	"id": "home",
-	"key": "0:home:knowledgeGraph:43524551:en",
+	"key": "0:home:knowledgeGraph:43005951:en",
 	"locale": "en",
 	"meta": {
 		"entityType": {
 			"id": "blogStarter_homePage",
-			"uid": 124010
+			"uid": 122208
 		},
 		"locale": "en"
 	},
@@ -95,5 +151,5 @@
 	"siteId": 0,
 	"siteInternalHostName": "",
 	"slug": "index.html",
-	"uid": 43524551
+	"uid": 43005951
 }

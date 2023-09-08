@@ -1,7 +1,7 @@
 {
   "$id": "site-entity",
   "filter": {
-    "entityIds": ["blogStarter_site-entity"]
+    "entityIds": ["blogStarter_site"]
   },
   "source": "knowledgeGraph",
   "fields": ["blogStarter_headerLinks", "logo", "blogStarter_footerLinks"],

@@ -1,6 +1,5 @@
-import { Suspense, lazy } from "react";
-
-const ReactMarkdown = lazy(() => import("react-markdown"));
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 interface MarkdownContentProps {
   content: string;
@@ -9,9 +8,7 @@ interface MarkdownContentProps {
 const MarkdownContent = ({ content }: MarkdownContentProps) => {
   return (
     <article className="prose lg:prose-xl">
-      <Suspense fallback="">
-        <ReactMarkdown children={content} />
-      </Suspense>
+      <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
     </article>
   );
 };

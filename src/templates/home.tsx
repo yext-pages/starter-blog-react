@@ -17,12 +17,12 @@ import "../index.css";
 import FeaturedBlog from "../components/FeaturedBlog";
 import { BlogStarter_featuredBlogs } from "../types/autogen";
 import ComplexHeader from "../components/ComplexHeader";
-import { AnalyticsProvider } from "@yext/pages/components";
+import { AnalyticsProvider } from "@yext/sites-components";
 
 export const config: TemplateConfig = {
   stream: {
     $id: "home",
-    localization: { locales: ["en"], primary: false },
+    localization: { locales: ["en"] },
     fields: [
       "id",
       "name",
@@ -65,7 +65,6 @@ export default function Home({ document, __meta }: TemplateProps) {
         <ComplexHeader
           backgroundColor="#FFFFFF"
           textColor="#000000"
-          logo={document._site.logo.image.url}
           link1={document._site.blogStarter_headerLinks[0].uRL}
           link2={document._site.blogStarter_headerLinks[1].uRL}
           link3={document._site.blogStarter_headerLinks[2].uRL}

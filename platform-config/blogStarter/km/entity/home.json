@@ -1,5 +1,5 @@
 {
-  "$id": "home",
+  "$id": "blogStarter_home",
   "$schema": "https://schema.yext.com/config/km/entity/v1",
   "primaryLocale": "en",
   "content": {
@@ -39,10 +39,10 @@
       }
     },
     "blogStarter_featuredBlogs": [
-      "5420670929450916491",
-      "6709790281064095150",
-      "2904357900551428226",
-      "3859073401283456134"
+      "blogStarter_blog-chelsea",
+      "blogStarter_blog-fidi",
+      "blogStarter_blog-les",
+      "blogStarter_blog-williamsburg"
     ],
     "blogStarter_heading": "NYC Blog",
     "blogStarter_subHeading": "Your guide to the best neighborhoods in The Big Apple.",
@@ -73,6 +73,6 @@
     "name": "Home",
     "slug": "index.html"
   },
-  "entityType": "ce_homePage",
+  "entityType": "blogStarter_homePage",
   "labels": []
 }

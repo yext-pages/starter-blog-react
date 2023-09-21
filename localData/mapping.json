@@ -1,11 +1,12 @@
 {
 	"blog": [
-		"blog__en__01a63beaad7d3e17f5729c94ef0199d3.json",
-		"blog__en__9c2f8fe94901232326cb5ccba0ffca95.json",
-		"blog__en__73daa62cbfb342728b133aee0261fcb6.json",
-		"blog__en__426b5509021ad9e8e674ec7f4eeed3af.json"
+		"blog__en__659dfac0aefdedaf313a48f8a7248526.json",
+		"blog__en__f41c5da81aa71843b8f9c55b31a0d92d.json",
+		"blog__en__a945b76760996b27e86431fe9bc240ca.json",
+		"blog__en__b46a4aecb0b2b9577473e7e85cc24dfc.json"
 	],
 	"home": [
-		"home__en__b9caff4eb96b7ccfaace158ffba144ab.json"
+		"home__en__1dd91200368bdb2e61d2a8a47b9731fa.json",
+		"home__en__02ed4f64fdbce44f153a0c4a161fb822.json"
 	]
 }

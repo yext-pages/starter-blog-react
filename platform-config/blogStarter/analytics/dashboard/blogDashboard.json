@@ -1,0 +1,27 @@
+{
+  "$id": "blogStarter_blogDashboard",
+  "$schema": "https://schema.yext.com/config/analytics/dashboard/v1",
+  "name": "Blog Analytics",
+  "insights": [
+    {
+      "insight": "PAGE-VIEWS-BY-DAY",
+      "x": 0,
+      "y": 0,
+      "width": 6,
+      "height": 1
+    },
+    {
+      "insight": "blogStarter_Page_Views_by_Entity",
+      "x": 0,
+      "y": 1,
+      "width": 6,
+      "height": 1
+    }
+  ],
+  "filters": [
+    {
+      "filter": "yext/date",
+      "in": "WEEKS_12"
+    }
+  ]
+}

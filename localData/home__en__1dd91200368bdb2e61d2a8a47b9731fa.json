@@ -1,0 +1,101 @@
+{
+	"__": {
+		"entityPageSet": {},
+		"name": "home",
+		"streamId": "home",
+		"templateType": "JS"
+	},
+	"_site": {
+		"blogStarter_footerLinks": [
+			{
+				"label": "Privacy",
+				"uRL": "https://yext.com"
+			},
+			{
+				"label": "Terms",
+				"uRL": "https://yext.com"
+			},
+			{
+				"label": "Settings",
+				"uRL": "https://yext.com"
+			},
+			{
+				"label": "Help",
+				"uRL": "https://yext.com"
+			}
+		],
+		"blogStarter_headerLinks": [
+			{
+				"label": "About",
+				"uRL": "https://yext.com"
+			},
+			{
+				"label": "Membership",
+				"uRL": "https://yext.com"
+			},
+			{
+				"label": "Contribute",
+				"uRL": "https://yext.com"
+			},
+			{
+				"label": "Login",
+				"uRL": "https://yext.com"
+			}
+		],
+		"id": "blogStarter_site",
+		"logo": {
+			"description": "Company Logo",
+			"image": {
+				"alternateText": "company logo",
+				"height": 300,
+				"url": "http://a.mktgcdn.com/p-sandbox/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/300x300.png",
+				"width": 300
+			}
+		},
+		"meta": {
+			"entityType": {
+				"id": "blogStarter_site",
+				"uid": 130970
+			},
+			"locale": "en"
+		},
+		"uid": 46153217
+	},
+	"blogStarter_coverPhoto": {
+		"image": {
+			"alternateText": "new york city",
+			"height": 1441,
+			"url": "http://a.mktgcdn.com/p-sandbox/J5qB-bn1fUoARkUX0W2N3-GUmiCmgAmgpLpfz2rPSHE/2008x1441.jpg",
+			"width": 2008
+		}
+	},
+	"blogStarter_heading": "NYC Blog",
+	"blogStarter_subHeading": "Your guide to the best neighborhoods in The Big Apple.",
+	"businessId": 3245847,
+	"id": "blogStarter_entity-home",
+	"key": "0:home:knowledgeGraph:46152643:en",
+	"locale": "en",
+	"logo": {
+		"image": {
+			"height": 300,
+			"url": "http://a.mktgcdn.com/p-sandbox/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/300x300.png",
+			"width": 300
+		}
+	},
+	"meta": {
+		"entityType": {
+			"id": "blogStarter_homePage",
+			"uid": 130969
+		},
+		"locale": "en"
+	},
+	"name": "Home",
+	"ref_categories": null,
+	"ref_listings": [],
+	"ref_reviewsAgg": [],
+	"siteDomain": "",
+	"siteId": 0,
+	"siteInternalHostName": "",
+	"slug": "index.html",
+	"uid": 46152643
+}

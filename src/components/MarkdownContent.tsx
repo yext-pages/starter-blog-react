@@ -1,5 +1,6 @@
-import { Markdown } from "@yext/react-components";
-import React from "react";
+import { Suspense, lazy } from "react";
+
+const ReactMarkdown = lazy(() => import("react-markdown"));
 
 interface MarkdownContentProps {
   content: string;
@@ -8,7 +9,9 @@ interface MarkdownContentProps {
 const MarkdownContent = ({ content }: MarkdownContentProps) => {
   return (
     <article className="prose lg:prose-xl">
-      <Markdown content={content} />
+      <Suspense fallback="">
+        <ReactMarkdown children={content} />
+      </Suspense>
     </article>
   );
 };

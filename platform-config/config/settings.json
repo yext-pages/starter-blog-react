@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.yext.com/config/km/settings/v1",
+  "primaryEntityType": "location",
+  "entityTypeSettings": [
+    {
+      "entityType": "blogStarter_homePage",
+      "defaultFieldEligibilityGroup": "blogStarter_homePage",
+      "disabled": false
+    },
+    {
+      "entityType": "blogStarter_blog",
+      "defaultFieldEligibilityGroup": "blogStarter_blog",
+      "disabled": false
+    },
+    {
+      "entityType": "blogStarter_site",
+      "defaultFieldEligibilityGroup": "blogStarter_site",
+      "disabled": false
+    }
+  ]
+}

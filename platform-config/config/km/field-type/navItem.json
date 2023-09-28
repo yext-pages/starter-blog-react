@@ -1,0 +1,36 @@
+{
+  "$id": "blogStarter_navItem",
+  "$schema": "https://schema.yext.com/config/km/field-type/v1",
+  "description": "The label and URL for a single nav item.",
+  "displayName": "Header Links",
+  "type": {
+    "structType": {
+      "property": [
+        {
+          "name": "label",
+          "displayName": "Label",
+          "isRequired": false,
+          "typeId": "string",
+          "type": {
+            "stringType": {
+              "stereotype": "SIMPLE",
+              "maxLength": 100000
+            }
+          }
+        },
+        {
+          "name": "uRL",
+          "displayName": "URL",
+          "isRequired": false,
+          "typeId": "string",
+          "type": {
+            "stringType": {
+              "stereotype": "URL",
+              "maxLength": 2000
+            }
+          }
+        }
+      ]
+    }
+  }
+}

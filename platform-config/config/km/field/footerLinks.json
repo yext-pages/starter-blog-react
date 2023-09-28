@@ -1,0 +1,15 @@
+{
+  "$id": "blogStarter_footerLinks",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "List of nav items to include in the footer of your site.",
+  "displayName": "Footer Links",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "listType": {
+      "typeId": "blogStarter_navItem",
+      "maxLength": 5000
+    }
+  },
+  "typeId": "list"
+}

@@ -19,7 +19,7 @@ import HorizontalDivider from "../components/HorizontalDivider";
 import Footer from "../components/Footer";
 import Date from "../components/Date";
 import ComplexHeader from "../components/ComplexHeader";
-import { AnalyticsProvider } from "@yext/pages/components";
+import { AnalyticsProvider } from "@yext/sites-components";
 
 export const config: TemplateConfig = {
   stream: {
@@ -40,7 +40,6 @@ export const config: TemplateConfig = {
     },
     localization: {
       locales: ["en"],
-      primary: false,
     },
   },
 };

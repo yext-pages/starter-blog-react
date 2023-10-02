@@ -1,5 +1,4 @@
-import { HexColor } from "@yext/studio";
-import Link from "./Link";
+import Link from "../atoms/Link";
 
 interface FooterProps {
   navItems: {

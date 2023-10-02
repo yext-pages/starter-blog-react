@@ -7,12 +7,11 @@ import {
   GetHeadConfig,
   HeadConfig,
 } from "@yext/pages";
-import MainLayout from "../components/atoms/MainLayout";
+import PageLayout from "../components/PageLayout";
 import Image from "../components/atoms/Image";
 import MarkdownContent from "../components/atoms/MarkdownContent";
 import HorizontalDivider from "../components/atoms/HorizontalDivider";
 import Date from "../components/atoms/Date";
-import { AnalyticsProvider } from "@yext/sites-components";
 import Heading from "../components/atoms/Heading";
 import Container from "../components/atoms/Container";
 import Text from "../components/atoms/Text";
@@ -65,7 +64,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (
 
 export default function Blog({ document, __meta }: TemplateProps) {
   return (
-    <MainLayout
+    <PageLayout
       logo="http://a.mktgcdn.com/p/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/300x300.png"
       footerNav={document._site.blogStarter_footerLinks}
       headerNav={document._site.blogStarter_headerLinks}
@@ -100,6 +99,6 @@ export default function Blog({ document, __meta }: TemplateProps) {
         />
         <MarkdownContent content={document.blogStarter_body.markdown} />
       </Container>
-    </MainLayout>
+    </PageLayout>
   );
 }

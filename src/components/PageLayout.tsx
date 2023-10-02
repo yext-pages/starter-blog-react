@@ -1,22 +1,22 @@
-import Header from "./Header";
-import Page from "./Page";
-import Footer from "./Footer";
-import Main from "../Main";
+import Header from "./molecules/Header";
+import Page from "./atoms/Page";
+import Footer from "./molecules/Footer";
+import Main from "./Main";
 import { PropsWithChildren } from "react";
 import { TemplateProps } from "@yext/pages";
 import { AnalyticsProvider } from "@yext/sites-components";
-import { NavItem } from "../../types/autogen";
+import { NavItem } from "../types/autogen";
 
 /*
 name: Blog Site Layout
 description: Basic layout for pages in a blog site
 */
 
-interface MainLayoutProps {
+interface PageLayoutProps {
   footerNav: NavItem[];
   headerNav: NavItem[];
   logo: string;
-  document: TemplateProps;
+  document?: TemplateProps;
 }
 
 export const initialProps = {
@@ -25,15 +25,18 @@ export const initialProps = {
   headerNav: [{ uRL: "#", label: "Link 1" }],
 };
 
-const MainLayout = ({
+const PageLayout = ({
   children,
   footerNav,
   headerNav,
   logo,
   document,
-}: PropsWithChildren<MainLayoutProps>) => {
+}: PropsWithChildren<PageLayoutProps>) => {
   return (
-    <AnalyticsProvider templateData={document} enableDebugging={true}>
+    <AnalyticsProvider
+      templateData={document || { document: {} }}
+      enableDebugging={true}
+    >
       <Page>
         <Header logo={logo} navItems={headerNav} />
         <Main>{children}</Main>
@@ -43,4 +46,4 @@ const MainLayout = ({
   );
 };
 
-export default MainLayout;
+export default PageLayout;

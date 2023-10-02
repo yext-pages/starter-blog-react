@@ -2,8 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Link from "./Link";
-import Text from "./Text";
+import Link from "../atoms/Link";
+import Text from "../atoms/Text";
 
 export interface HeaderProps {
   logo: string;

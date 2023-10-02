@@ -7,7 +7,7 @@ import {
   TemplateRenderProps,
 } from "@yext/pages";
 import Image from "../components/atoms/Image";
-import MainLayout from "../components/atoms/MainLayout";
+import PageLayout from "../components/PageLayout";
 import "../index.css";
 import FeaturedBlog from "../components/molecules/FeaturedBlog";
 import { BlogStarter_featuredBlogs } from "../types/autogen";
@@ -60,7 +60,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (
 
 export default function Home({ document, __meta }: TemplateProps) {
   return (
-    <MainLayout
+    <PageLayout
       logo="http://a.mktgcdn.com/p/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/300x300.png"
       footerNav={document._site.blogStarter_footerLinks}
       headerNav={document._site.blogStarter_headerLinks}
@@ -93,6 +93,6 @@ export default function Home({ document, __meta }: TemplateProps) {
           )
         )}
       </Container>
-    </MainLayout>
+    </PageLayout>
   );
 }

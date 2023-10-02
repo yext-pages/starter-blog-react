@@ -1,7 +1,7 @@
 import { cva } from "class-variance-authority";
 import { cn } from "../../utils/cn";
 
-const headingVariants = cva("", {
+const headingVariants = cva("tracking-tight", {
   variants: {
     rank: {
       "1": "text-4xl leading-10",
@@ -18,6 +18,10 @@ const headingVariants = cva("", {
       Normal: "font-normal",
       "Semi Bold": "font-semibold",
       Bold: "font-bold",
+    },
+    color: {
+      Default: "text-default",
+      Light: "text-light",
     },
   },
 });
@@ -38,6 +42,10 @@ export interface HeadingProps {
    */
   align?: "Left" | "Center" | "Right";
   /**
+   * @displayName Text Color
+   */
+  color?: "Default" | "Light";
+  /**
    * @displayName Font Weight
    */
   weight?: "Normal" | "Semi Bold" | "Bold";
@@ -52,14 +60,24 @@ export const initialProps: HeadingProps = {
   rank: "1",
   align: "Left",
   weight: "Normal",
+  color: "Default",
   className: "",
 };
 
-const Heading = ({ text, rank, className, align, weight }: HeadingProps) => {
+const Heading = ({
+  text,
+  rank,
+  className,
+  align,
+  weight,
+  color,
+}: HeadingProps) => {
   const Tag: any = rank ? `h${rank}` : "span";
 
   return (
-    <Tag className={cn(headingVariants({ rank, align, className, weight }))}>
+    <Tag
+      className={cn(headingVariants({ rank, align, className, color, weight }))}
+    >
       {text}
     </Tag>
   );

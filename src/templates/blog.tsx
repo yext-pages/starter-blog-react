@@ -79,7 +79,13 @@ export default function Blog({ document }: TemplateProps) {
           marginTop="24px"
           marginBottom="24px"
         >
-          <Heading text={document.name} align="Left" rank="1" weight="Bold" />
+          <Heading
+            text={document.name}
+            align="Left"
+            rank="1"
+            weight="Bold"
+            color="Default"
+          />
           <Container layout="row" className="items-center gap-2">
             <Text
               text={document.blogStarter_blogAuthor}
@@ -89,7 +95,7 @@ export default function Blog({ document }: TemplateProps) {
             />
             <HorizontalDivider height="16px" color="Default" />
             <Date
-              color="Light"
+              color="Default"
               date={document.datePosted}
               size="M"
               weight="Light"

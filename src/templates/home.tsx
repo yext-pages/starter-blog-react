@@ -7,13 +7,14 @@ import {
   TemplateRenderProps,
 } from "@yext/pages";
 import Image from "../components/atoms/Image";
-import PageLayout from "../components/PageLayout";
 import "../index.css";
-import FeaturedBlog from "../components/molecules/FeaturedBlog";
-import { BlogStarter_featuredBlogs } from "../types/autogen";
 import Heading from "../components/atoms/Heading";
 import Container from "../components/atoms/Container";
 import FeaturedBlogsSection from "../components/molecules/FeaturedBlogsSection";
+import Footer from "../components/molecules/Footer";
+import Main from "../components/Main";
+import Page from "../components/atoms/Page";
+import Header from "../components/molecules/Header";
 
 export const config: TemplateConfig = {
   stream: {
@@ -59,30 +60,37 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (
   };
 };
 
-export default function Home({ document, __meta }: TemplateProps) {
+export default function Home({ document }: TemplateProps) {
   return (
-    <PageLayout
-      logo="http://a.mktgcdn.com/p/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/300x300.png"
-      footerNav={document._site.blogStarter_footerLinks}
-      headerNav={document._site.blogStarter_headerLinks}
-      document={{ document: document, __meta: __meta }}
-    >
-      <Container
-        layout="column"
-        className="gap-6"
-        marginTop="24px"
-        marginBottom="24px"
-      >
-        <Image
-          src={document.blogStarter_coverPhoto.image.url}
-          alt={document.blogStarter_coverPhoto.image.alternateText}
-          aspect="Rectangle"
-        />
-        <Heading text="Featured Articles" align="Left" rank="2" weight="Bold" />
-        <FeaturedBlogsSection
-          featuredBlogs={document.blogStarter_featuredBlogs}
-        />
-      </Container>
-    </PageLayout>
+    <Page>
+      <Header
+        logo="http://a.mktgcdn.com/p/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/300x300.png"
+        navItems={document._site.blogStarter_headerLinks}
+      />
+      <Main>
+        <Container
+          layout="column"
+          className="gap-6"
+          marginTop="24px"
+          marginBottom="24px"
+        >
+          <Image
+            src={document.blogStarter_coverPhoto.image.url}
+            alt={document.blogStarter_coverPhoto.image.alternateText}
+            aspect="Rectangle"
+          />
+          <Heading
+            text="Featured Articles"
+            align="Left"
+            rank="2"
+            weight="Bold"
+          />
+          <FeaturedBlogsSection
+            featuredBlogs={document.blogStarter_featuredBlogs}
+          />
+        </Container>
+      </Main>
+      <Footer navItems={document._site.blogStarter_footerLinks} />
+    </Page>
   );
 }

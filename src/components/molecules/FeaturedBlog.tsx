@@ -25,12 +25,7 @@ const FeaturedBlog = ({
 }: FeaturedBlogProps) => {
   return (
     <Container layout="row" className="gap-4">
-      <Image
-        src={src || ""}
-        alt={alt || ""}
-        aspect="Square"
-        className="w-24 md:w-40"
-      />
+      <Image src={src || ""} alt={alt || ""} aspect="Square" className="w-40" />
       <Container layout="column" className="gap-2">
         <Date date={datePosted} color="Default" size="XS" weight="Light" />
         <Container layout="column" className="gap-2">

@@ -13,6 +13,7 @@ import FeaturedBlog from "../components/molecules/FeaturedBlog";
 import { BlogStarter_featuredBlogs } from "../types/autogen";
 import Heading from "../components/atoms/Heading";
 import Container from "../components/atoms/Container";
+import FeaturedBlogsSection from "../components/molecules/FeaturedBlogsSection";
 
 export const config: TemplateConfig = {
   stream: {
@@ -78,20 +79,9 @@ export default function Home({ document, __meta }: TemplateProps) {
           aspect="Rectangle"
         />
         <Heading text="Featured Articles" align="Left" rank="2" weight="Bold" />
-        {document.blogStarter_featuredBlogs.map(
-          (item: BlogStarter_featuredBlogs, index: string) => (
-            <FeaturedBlog
-              name={item.name}
-              slug={item.slug}
-              src={item.primaryPhoto?.image.url}
-              alt={item.primaryPhoto?.image.alternateText}
-              blogStarter_description={item.blogStarter_description}
-              datePosted={item.datePosted}
-              key={index}
-              textColor="#000000"
-            />
-          )
-        )}
+        <FeaturedBlogsSection
+          featuredBlogs={document.blogStarter_featuredBlogs}
+        />
       </Container>
     </PageLayout>
   );

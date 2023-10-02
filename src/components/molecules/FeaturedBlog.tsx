@@ -13,7 +13,6 @@ interface FeaturedBlogProps {
   alt?: string;
   blogStarter_description?: string;
   datePosted?: string;
-  textColor: HexColor;
 }
 
 const FeaturedBlog = ({
@@ -23,7 +22,6 @@ const FeaturedBlog = ({
   alt,
   blogStarter_description,
   datePosted,
-  textColor,
 }: FeaturedBlogProps) => {
   return (
     <Container layout="row" className="gap-4">
@@ -43,7 +41,7 @@ const FeaturedBlog = ({
             size="M"
             text={blogStarter_description}
             className="line-clamp-3"
-            color="default"
+            color="Default"
             weight="Light"
           />
         </Container>

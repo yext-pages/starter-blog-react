@@ -1,7 +1,7 @@
 import Link from "../atoms/Link";
 
 interface FooterProps {
-  navItems: {
+  navItems?: {
     uRL: string;
     label: string;
   }[];

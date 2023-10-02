@@ -13,8 +13,8 @@ description: Basic layout for pages in a blog site
 */
 
 interface PageLayoutProps {
-  footerNav: NavItem[];
-  headerNav: NavItem[];
+  footerNav?: NavItem[];
+  headerNav?: NavItem[];
   logo: string;
   document?: TemplateProps;
 }
@@ -38,7 +38,7 @@ const PageLayout = ({
       enableDebugging={true}
     >
       <Page>
-        <Header logo={logo} navItems={headerNav} />
+        <Header logo={logo || ""} navItems={headerNav} />
         <Main>{children}</Main>
         <Footer navItems={footerNav} />
       </Page>

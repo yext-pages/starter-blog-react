@@ -1,4 +1,5 @@
 import PageLayout from "../components/PageLayout";
+import Heading from "../components/atoms/Heading";
 
 const BlogLayout = () => {
   return (
@@ -17,9 +18,7 @@ const BlogLayout = () => {
         { label: "Login", uRL: "#" },
       ]}
     >
-      <div className="flex h-full w-full items-center justify-center">
-        Insert Content Here
-      </div>
+      <Heading text="Insert Page Content Here" />
     </PageLayout>
   );
 };

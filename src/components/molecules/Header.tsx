@@ -7,7 +7,7 @@ import Text from "../atoms/Text";
 
 export interface HeaderProps {
   logo: string;
-  navItems: {
+  navItems?: {
     uRL: string;
     label: string;
   }[];

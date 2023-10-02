@@ -49,3 +49,8 @@ export interface Home {
   slug: string;
   blogStarter_featuredBlogs: BlogStarter_featuredBlogs[];
 }
+
+export interface NavItem {
+  uRL: string;
+  label: string;
+}

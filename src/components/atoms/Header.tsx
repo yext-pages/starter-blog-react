@@ -5,17 +5,15 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "./Link";
 import Text from "./Text";
 
-export interface ComplexHeaderProps {
+export interface HeaderProps {
   logo: string;
-  navItems:
-    | {
-        uRL: string;
-        label: string;
-      }[]
-    | undefined;
+  navItems: {
+    uRL: string;
+    label: string;
+  }[];
 }
 
-export default function ComplexHeader({ logo, navItems }: ComplexHeaderProps) {
+export default function Header({ logo, navItems }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   function clickHandler() {

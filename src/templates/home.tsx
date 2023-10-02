@@ -7,12 +7,10 @@ import {
   TemplateRenderProps,
 } from "@yext/pages";
 import Image from "../components/atoms/Image";
-import Footer from "../components/atoms/Footer";
 import MainLayout from "../components/atoms/MainLayout";
 import "../index.css";
 import FeaturedBlog from "../components/molecules/FeaturedBlog";
 import { BlogStarter_featuredBlogs } from "../types/autogen";
-import { AnalyticsProvider } from "@yext/sites-components";
 import Heading from "../components/atoms/Heading";
 import Container from "../components/atoms/Container";
 

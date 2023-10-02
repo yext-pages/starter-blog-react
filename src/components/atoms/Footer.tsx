@@ -2,12 +2,10 @@ import { HexColor } from "@yext/studio";
 import Link from "./Link";
 
 interface FooterProps {
-  navItems:
-    | {
-        uRL: string;
-        label: string;
-      }[]
-    | undefined;
+  navItems: {
+    uRL: string;
+    label: string;
+  }[];
 }
 
 const Footer = ({ navItems }: FooterProps) => {

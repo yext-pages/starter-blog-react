@@ -1,5 +1,4 @@
 import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 
 interface MarkdownContentProps {
   content: string;
@@ -7,8 +6,8 @@ interface MarkdownContentProps {
 
 const MarkdownContent = ({ content }: MarkdownContentProps) => {
   return (
-    <article className="prose lg:prose-xl">
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
+    <article className="prose lg:prose-lg">
+      <ReactMarkdown>{content}</ReactMarkdown>
     </article>
   );
 };

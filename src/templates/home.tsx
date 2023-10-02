@@ -6,18 +6,15 @@ import {
   TemplateProps,
   TemplateRenderProps,
 } from "@yext/pages";
-import React from "react";
-import BigImage from "../components/BigImage";
-import CenteredContainer from "../components/CenteredContainer";
-import Footer from "../components/Footer";
-import MainLayout from "../components/MainLayout";
-import Title from "../components/Title";
-import VerticalStack from "../components/VerticalStack";
+import Image from "../components/atoms/Image";
+import Footer from "../components/atoms/Footer";
+import MainLayout from "../components/atoms/MainLayout";
 import "../index.css";
-import FeaturedBlog from "../components/FeaturedBlog";
+import FeaturedBlog from "../components/molecules/FeaturedBlog";
 import { BlogStarter_featuredBlogs } from "../types/autogen";
-import ComplexHeader from "../components/ComplexHeader";
 import { AnalyticsProvider } from "@yext/sites-components";
+import Heading from "../components/atoms/Heading";
+import Container from "../components/atoms/Container";
 
 export const config: TemplateConfig = {
   stream: {
@@ -37,7 +34,7 @@ export const config: TemplateConfig = {
       "blogStarter_featuredBlogs.blogStarter_description",
       "blogStarter_featuredBlogs.datePosted",
     ],
-    filter: { entityTypes: ["blogStarter_homePage"] },
+    filter: { entityIds: ["blogStarter_home"] },
   },
 };
 export const getPath: GetPath<TemplateProps> = () => {
@@ -51,82 +48,53 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (
     title: "Blog Home",
     charset: "UTF-8",
     viewport: "width=device-width, initial-scale=1",
+    tags: [
+      {
+        type: "link",
+        attributes: {
+          rel: "stylesheet",
+          href: "https://rsms.me/inter/inter.css",
+        },
+      },
+    ],
   };
 };
 
 export default function Home({ document, __meta }: TemplateProps) {
-  console.log(document._site);
   return (
-    <MainLayout backgroundColor="#FFFFFF">
-      <AnalyticsProvider
-        templateData={{ document: document, __meta: __meta }}
-        enableDebugging={true}
+    <MainLayout
+      logo="http://a.mktgcdn.com/p/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/300x300.png"
+      footerNav={document._site.blogStarter_footerLinks}
+      headerNav={document._site.blogStarter_headerLinks}
+      document={{ document: document, __meta: __meta }}
+    >
+      <Container
+        layout="column"
+        className="gap-6"
+        marginTop="24px"
+        marginBottom="24px"
       >
-        <ComplexHeader
-          backgroundColor="#FFFFFF"
-          textColor="#000000"
-          link1={document._site.blogStarter_headerLinks[0].uRL}
-          link2={document._site.blogStarter_headerLinks[1].uRL}
-          link3={document._site.blogStarter_headerLinks[2].uRL}
-          link4={document._site.blogStarter_headerLinks[3].uRL}
-          label1={document._site.blogStarter_headerLinks[0].label}
-          label2={document._site.blogStarter_headerLinks[1].label}
-          label3={document._site.blogStarter_headerLinks[2].label}
-          label4={document._site.blogStarter_headerLinks[3].label}
-          companyScreenReaderText={document._site.logo.image.alternateText}
-          hoverColor="light"
+        <Image
+          src={document.blogStarter_coverPhoto.image.url}
+          alt={document.blogStarter_coverPhoto.image.alternateText}
+          aspect="Rectangle"
         />
-        <CenteredContainer>
-          <VerticalStack
-            spacing="8"
-            topMargin="10"
-            bottomMargin="10"
-            leftMargin="2"
-            rightMargin="2"
-            alignment="left"
-          >
-            <BigImage
-              src={document.blogStarter_coverPhoto.image.url}
-              alt={document.blogStarter_coverPhoto.image.alternateText}
-            />
-            <Title
-              value="Featured Articles"
-              fontWeight="bold"
-              textSize="4xl"
-              topMargin="0"
-              bottomMargin="0"
+        <Heading text="Featured Articles" align="Left" rank="2" weight="Bold" />
+        {document.blogStarter_featuredBlogs.map(
+          (item: BlogStarter_featuredBlogs, index: string) => (
+            <FeaturedBlog
+              name={item.name}
+              slug={item.slug}
+              src={item.primaryPhoto?.image.url}
+              alt={item.primaryPhoto?.image.alternateText}
+              blogStarter_description={item.blogStarter_description}
+              datePosted={item.datePosted}
+              key={index}
               textColor="#000000"
             />
-            {document.blogStarter_featuredBlogs.map(
-              (item: BlogStarter_featuredBlogs, index: string) => (
-                <FeaturedBlog
-                  name={item.name}
-                  slug={item.slug}
-                  src={item.primaryPhoto?.image.url}
-                  alt={item.primaryPhoto?.image.alternateText}
-                  blogStarter_description={item.blogStarter_description}
-                  datePosted={item.datePosted}
-                  key={index}
-                  textColor="#000000"
-                />
-              )
-            )}
-          </VerticalStack>
-        </CenteredContainer>
-        <Footer
-          link1={document._site.blogStarter_footerLinks[0].uRL}
-          link2={document._site.blogStarter_footerLinks[1].uRL}
-          link3={document._site.blogStarter_footerLinks[2].uRL}
-          link4={document._site.blogStarter_footerLinks[3].uRL}
-          label1={document._site.blogStarter_footerLinks[0].label}
-          label2={document._site.blogStarter_footerLinks[1].label}
-          label3={document._site.blogStarter_footerLinks[2].label}
-          label4={document._site.blogStarter_footerLinks[3].label}
-          backgroundColor="#FFFFFF"
-          textColor="#000000"
-          hoverColor="light"
-        />
-      </AnalyticsProvider>
+          )
+        )}
+      </Container>
     </MainLayout>
   );
 }

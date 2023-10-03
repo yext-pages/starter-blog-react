@@ -69,10 +69,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (
 export default function Blog({ document }: TemplateProps) {
   return (
     <PageWrapper>
-      <Header
-        logo="http://a.mktgcdn.com/p/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/300x300.png"
-        navItems={document._site.blogStarter_headerLinks}
-      />
+      <Header logo="http://a.mktgcdn.com/p/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/300x300.png" />
       <MainContentWrapper>
         <Container
           layout="column"
@@ -111,7 +108,7 @@ export default function Blog({ document }: TemplateProps) {
           <MarkdownContent content={document.blogStarter_body.markdown} />
         </Container>
       </MainContentWrapper>
-      <Footer links={document._site.blogStarter_footerLinks} />
+      <Footer />
     </PageWrapper>
   );
 }

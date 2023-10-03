@@ -1,10 +1,13 @@
-export interface FooterProps {
-  links: { label: string; uRL: string }[];
-}
-
-export default function Footer({ links }: FooterProps) {
+export default function Footer() {
   const navigation = {
-    main: links ?? [],
+    main: [
+      { label: "About", uRL: "#" },
+      { label: "Privacy", uRL: "#" },
+      { label: "Terms", uRL: "#" },
+      { label: "Settings", uRL: "#" },
+      { label: "Accessibility", uRL: "#" },
+      { label: "Help", uRL: "#" },
+    ],
     social: [
       {
         name: "Facebook",

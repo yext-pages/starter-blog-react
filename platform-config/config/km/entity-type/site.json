@@ -1,7 +1,0 @@
-{
-  "$id": "blogStarter_site",
-  "$schema": "https://schema.yext.com/config/km/entity-type/v2",
-  "description": "An entity used to power the site stream for a Pages project.",
-  "displayName": "Site",
-  "pluralDisplayName": "Sites"
-}

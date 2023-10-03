@@ -6,13 +6,16 @@ import Text from "../atoms/Text";
 
 export interface HeaderProps {
   logo: string;
-  navItems?: {
-    uRL: string;
-    label: string;
-  }[];
 }
 
-export default function Header({ logo, navItems }: HeaderProps) {
+const navigation = [
+  { label: "About", uRL: "#" },
+  { label: "Membership", uRL: "#" },
+  { label: "Contribute", uRL: "#" },
+  { label: "Login", uRL: "#" },
+];
+
+export default function Header({ logo }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   function clickHandler() {
@@ -32,17 +35,16 @@ export default function Header({ logo, navItems }: HeaderProps) {
           </Link>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          {navItems &&
-            navItems.map((item) => (
-              <Link key={item.label} url={item.uRL}>
-                <Text
-                  text={item.label}
-                  color="Default"
-                  size="S"
-                  weight="Semi Bold"
-                />
-              </Link>
-            ))}
+          {navigation.map((item) => (
+            <Link key={item.label} url={item.uRL}>
+              <Text
+                text={item.label}
+                color="Default"
+                size="S"
+                weight="Semi Bold"
+              />
+            </Link>
+          ))}
         </div>
         <div className="flex flex-1 items-center justify-end gap-x-6">
           <a
@@ -100,21 +102,20 @@ export default function Header({ logo, navItems }: HeaderProps) {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="flex flex-col space-y-2 py-6">
-                {navItems &&
-                  navItems.map((item) => (
-                    <a
-                      className="text-default -mx-3 block rounded-lg px-3 py-2 text-sm font-semibold leading-7 hover:bg-zinc-50"
-                      key={item.label}
-                      href={item.uRL}
-                    >
-                      <Text
-                        text={item.label}
-                        color="Default"
-                        size="S"
-                        weight="Semi Bold"
-                      />
-                    </a>
-                  ))}
+                {navigation.map((item) => (
+                  <a
+                    className="text-default -mx-3 block rounded-lg px-3 py-2 text-sm font-semibold leading-7 hover:bg-zinc-50"
+                    key={item.label}
+                    href={item.uRL}
+                  >
+                    <Text
+                      text={item.label}
+                      color="Default"
+                      size="S"
+                      weight="Semi Bold"
+                    />
+                  </a>
+                ))}
               </div>
               <div className="py-6">
                 <a

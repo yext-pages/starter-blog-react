@@ -15,10 +15,23 @@ import {
 const containerVariants = cva("", {
   variants: {
     layout: {
-      flex: "flex flex-col lg:flex-row",
-      grid: "grid",
-      row: "flex flex-row",
-      column: "flex flex-col",
+      Flex: "flex flex-col lg:flex-row",
+      Grid: "grid",
+      Row: "flex flex-row",
+      Column: "flex flex-col",
+    },
+    flexGap: {
+      "2": "gap-2",
+      "4": "gap-4",
+      "6": "gap-6",
+      "8": "gap-8",
+      "10": "gap-10",
+      "12": "gap-12",
+    },
+    itemAlignment: {
+      Start: "items-start",
+      Center: "items-center",
+      End: "items-end",
     },
     columnCount: {
       "1": "grid-cols-1",
@@ -44,18 +57,20 @@ const containerVariants = cva("", {
     marginLeft,
     marginBottom,
     marginTop,
+    maxWidth: {
+      XS: "max-w-lg",
+      S: "max-w-xl",
+      M: "max-w-2xl",
+      L: "max-w-3xl",
+      XL: "max-w-5xl",
+      None: "max-w-none",
+    },
   },
   defaultVariants: {
-    layout: "column",
+    layout: "Column",
     columnSpan: "1",
   },
 });
-
-// export interface ContainerProps
-//   extends React.HTMLAttributes<HTMLDivElement>,
-//     VariantProps<typeof containerVariants> {
-//   children?: React.ReactNode;
-// }
 
 export interface ContainerProps {
   children?: React.ReactNode;
@@ -63,7 +78,17 @@ export interface ContainerProps {
    * @displayName Layout
    * @tooltip Defines the layout of the container
    */
-  layout?: "flex" | "grid" | "row" | "column";
+  layout?: "Flex" | "Grid" | "Row" | "Column";
+  /**
+   * @displayName Flex Gap
+   * @tooltip Defines the amount of space between each item. NOTE: Does not work with grid layout
+   */
+  flexGap?: "2" | "4" | "6" | "8" | "10" | "12";
+  /**
+   * @displayName Item Alignment
+   * @tooltip Defines the alignment of items within a container. NOTE: Does not work with grid layout
+   */
+  itemAlignment?: "Start" | "Center" | "End";
   /**
    * @displayName Column Count
    * @tooltip Defines the number of columns the container has. NOTE: Only works with grid layout
@@ -108,12 +133,17 @@ export interface ContainerProps {
    * @displayName Margin Left
    * @tooltip Defines the margin left of the container
    */
-  marginLeft?: Sizes;
+  marginLeft?: Sizes | "Auto";
   /**
    * @displayName Margin Right
    * @tooltip Defines the margin right of the container
    */
-  marginRight?: Sizes;
+  marginRight?: Sizes | "Auto";
+  /**
+   * @displayName Max Width
+   * @tooltip Defines the max width of the container
+   */
+  maxWidth?: "XS" | "S" | "M" | "L" | "XL" | "None";
   /**
    * @tooltip Used to override the default styles
    */
@@ -121,7 +151,9 @@ export interface ContainerProps {
 }
 
 export const initialProps: ContainerProps = {
-  layout: "flex",
+  layout: "Flex",
+  flexGap: "2",
+  itemAlignment: "Start",
   columnCount: "3",
   columnSpan: "1",
   paddingTop: "0px",
@@ -132,13 +164,15 @@ export const initialProps: ContainerProps = {
   marginBottom: "0px",
   marginLeft: "0px",
   marginRight: "0px",
-  // backgroundColor: "white",
+  maxWidth: "None",
   className: "",
 };
 
 const Container = ({
   className,
   layout,
+  flexGap,
+  itemAlignment,
   children,
   columnCount,
   columnSpan,
@@ -150,13 +184,15 @@ const Container = ({
   marginBottom,
   marginLeft,
   marginRight,
-}: // backgroundColor,
-ContainerProps) => {
+  maxWidth,
+}: ContainerProps) => {
   return (
     <div
       className={cn(
         containerVariants({
           layout,
+          flexGap,
+          itemAlignment,
           className,
           columnCount,
           columnSpan,
@@ -168,6 +204,7 @@ ContainerProps) => {
           marginLeft,
           marginBottom,
           marginTop,
+          maxWidth,
         })
       )}
     >

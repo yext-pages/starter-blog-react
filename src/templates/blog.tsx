@@ -72,13 +72,16 @@ export default function Blog({ document }: TemplateProps) {
       <Header logo="http://a.mktgcdn.com/p/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/300x300.png" />
       <MainContentWrapper>
         <Container
-          layout="column"
-          className="mx-auto max-w-2xl gap-8"
+          layout="Column"
+          maxWidth="M"
+          flexGap="8"
           marginTop="32px"
           marginBottom="32px"
+          marginLeft="Auto"
+          marginRight="Auto"
         >
           <BackButton backToUrl="./index.html" />
-          <Container layout="row" className="items-center gap-2">
+          <Container layout="Row" flexGap="2" itemAlignment="Center">
             <Text
               text={document.blogStarter_blogAuthor}
               color="Lighter"

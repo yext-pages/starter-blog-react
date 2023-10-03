@@ -1,4 +1,5 @@
 import { BlogStarter_featuredBlogs } from "../../types/autogen";
+import Container from "../atoms/Container";
 import FeaturedBlog from "./FeaturedBlog";
 
 export interface FeaturedBlogsSectionProps {
@@ -32,7 +33,7 @@ const FeaturedBlogsSection = ({
   descriptionSize,
 }: FeaturedBlogsSectionProps) => {
   return (
-    <section className="flex flex-col gap-8">
+    <Container layout="Column" flexGap="8">
       {featuredBlogs &&
         featuredBlogs.map((blog, i) => (
           <FeaturedBlog
@@ -49,7 +50,7 @@ const FeaturedBlogsSection = ({
             descriptionSize={descriptionSize}
           />
         ))}
-    </section>
+    </Container>
   );
 };
 

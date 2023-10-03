@@ -63,8 +63,8 @@ export default function Home({ document }: TemplateProps) {
       <Header logo="http://a.mktgcdn.com/p/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/300x300.png" />
       <MainContentWrapper>
         <Container
-          layout="column"
-          className="gap-8"
+          layout="Column"
+          flexGap="8"
           marginTop="48px"
           marginBottom="48px"
         >

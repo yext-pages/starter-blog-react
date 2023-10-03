@@ -97,6 +97,7 @@ export const marginLeft = {
   "80px": "ml-20",
   "88px": "ml-22",
   "96px": "ml-24",
+  Auto: "ml-auto",
 };
 
 export const marginRight = {
@@ -114,6 +115,7 @@ export const marginRight = {
   "80px": "mr-20",
   "88px": "mr-22",
   "96px": "mr-24",
+  Auto: "mr-auto",
 };
 
 export const marginTop = {

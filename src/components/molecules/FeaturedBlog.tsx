@@ -61,21 +61,21 @@ const FeaturedBlog = ({
   descriptionSize,
 }: FeaturedBlogProps) => {
   return (
-    <Container layout="row" className="gap-4">
+    <Container layout="Row" className="gap-4">
       <Image
         src={src || ""}
         alt={alt || ""}
         aspect={imgShape}
         className="w-40"
       />
-      <Container layout="column" className="gap-2">
+      <Container layout="Column" className="gap-2">
         <Date
           date={datePosted}
           color="Default"
           size={dateSize}
           weight="Light"
         />
-        <Container layout="column" className="gap-2">
+        <Container layout="Column" className="gap-2">
           <Link url={`./${slug}`}>
             <Heading rank={titleRank} weight="Semi Bold" text={name || ""} />
           </Link>

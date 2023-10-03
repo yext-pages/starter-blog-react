@@ -6,7 +6,13 @@ export interface PageWrapperProps {
 }
 
 const PageWrapper = ({ children, className }: PageWrapperProps) => {
-  return <div className={cn("min-h-screen", className)}>{children}</div>;
+  return (
+    <div
+      className={cn("flex min-h-screen flex-col justify-between", className)}
+    >
+      {children}
+    </div>
+  );
 };
 
 export default PageWrapper;

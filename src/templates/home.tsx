@@ -22,6 +22,7 @@ export const config: TemplateConfig = {
     localization: { locales: ["en"] },
     fields: [
       "name",
+      "slug",
       "blogStarter_coverPhoto",
       "blogStarter_featuredBlogs.id",
       "blogStarter_featuredBlogs.name",
@@ -33,8 +34,8 @@ export const config: TemplateConfig = {
     filter: { entityTypes: ["blogStarter_homePage"] },
   },
 };
-export const getPath: GetPath<TemplateProps> = () => {
-  return "index.html";
+export const getPath: GetPath<TemplateProps> = ({ document }) => {
+  return document.slug ?? "index.html";
 };
 
 export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (

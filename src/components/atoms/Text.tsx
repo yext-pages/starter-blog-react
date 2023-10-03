@@ -33,18 +33,17 @@ const textVariants = cva("font-sans", {
       Yes: "uppercase",
       No: "",
     },
+    maxLines: {
+      "1": "line-clamp-1",
+      "2": "line-clamp-2",
+      "3": "line-clamp-3",
+      "4": "line-clamp-4",
+      "5": "line-clamp-5",
+      None: "line-clamp-none",
+    },
   },
 });
 
-// export interface ParagraphVariants
-//   extends VariantProps<typeof paragraphVariants> {}
-
-// I wish that I could do this:
-// export interface ParagraphProps extends ParagraphVariants {
-//   StyledText?: string;
-// }
-
-// But I have to do this:
 export interface TextProps {
   /**
    * @displayName Text
@@ -75,6 +74,11 @@ export interface TextProps {
    **/
   color?: "Light" | "Default" | "Lighter";
   /**
+   * @displayName Max Lines
+   * @tooltip Defines the number of lines of text shown before truncation
+   **/
+  maxLines?: "1" | "2" | "3" | "4" | "5" | "None";
+  /**
    * @tooltip Used to override the default styles
    **/
   className?: string;
@@ -88,6 +92,7 @@ export const initialProps: TextProps = {
   italic: "No",
   uppercase: "No",
   color: "Default",
+  maxLines: "None",
   className: "",
 };
 
@@ -99,6 +104,7 @@ const Text = ({
   italic,
   uppercase,
   color,
+  maxLines,
   className,
 }: TextProps) => {
   return (
@@ -111,6 +117,7 @@ const Text = ({
           italic,
           uppercase,
           color,
+          maxLines,
           className,
         })
       )}

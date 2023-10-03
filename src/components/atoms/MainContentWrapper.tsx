@@ -10,7 +10,9 @@ const MainContentWrapper = ({
   className,
 }: MainContentWrapperProps) => {
   return (
-    <main className={cn("mx-auto max-w-5xl px-6", className)}>{children}</main>
+    <main className={cn("mx-auto max-w-5xl px-6 pb-52", className)}>
+      {children}
+    </main>
   );
 };
 

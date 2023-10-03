@@ -74,10 +74,10 @@ export default function Footer() {
   };
 
   return (
-    <footer className="border-t">
-      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-8 lg:px-8">
+    <footer className="absolute bottom-0 h-52 w-full border-t">
+      <div className="mx-auto flex h-full max-w-7xl flex-col justify-center overflow-hidden px-6 lg:px-8">
         <nav
-          className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
+          className="-mb-6 columns-2 sm:flex sm:items-center sm:justify-center sm:space-x-12"
           aria-label="Footer"
         >
           {navigation.main.map((item: { label: string; uRL: string }) => (

@@ -23,9 +23,9 @@ export default function Header({ logo }: HeaderProps) {
   }
 
   return (
-    <header className="text-default border-b text-sm">
+    <header className="text-default h-20 border-b text-sm">
       <nav
-        className="mx-auto flex items-center justify-between p-6 px-8"
+        className="mx-auto flex h-full items-center justify-between px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">

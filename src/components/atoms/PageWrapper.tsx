@@ -5,14 +5,8 @@ export interface PageWrapperProps {
   className?: string;
 }
 
-export const initialProps: PageWrapperProps = {
-  className: "",
-};
-
 const PageWrapper = ({ children, className }: PageWrapperProps) => {
-  return (
-    <div className={cn("min-h-screen bg-white/90", className)}>{children}</div>
-  );
+  return <div className={cn("min-h-screen", className)}>{children}</div>;
 };
 
 export default PageWrapper;

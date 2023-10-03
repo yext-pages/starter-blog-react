@@ -36,15 +36,6 @@ const containerVariants = cva("", {
       "5": "col-span-5",
       "6": "col-span-6",
     },
-    // backgroundColor: {
-    //   white: "bg-white",
-    //   dust: "bg-dust",
-    //   sage: "bg-sage",
-    //   leaf: "bg-leaf",
-    //   powder: "bg-powder",
-    //   moss: "bg-moss",
-    //   mint: "bg-mint",
-    // },
     paddingTop,
     paddingBottom,
     paddingLeft,
@@ -124,18 +115,6 @@ export interface ContainerProps {
    */
   marginRight?: Sizes;
   /**
-   * @displayName Background Color
-   * @tooltip Defines the background color of the container
-   */
-  // backgroundColor?:
-  //   | "white"
-  //   | "dust"
-  //   | "sage"
-  //   | "leaf"
-  //   | "powder"
-  //   | "moss"
-  //   | "mint";
-  /**
    * @tooltip Used to override the default styles
    */
   className?: string;
@@ -189,7 +168,6 @@ ContainerProps) => {
           marginLeft,
           marginBottom,
           marginTop,
-          // backgroundColor,
         })
       )}
     >

@@ -5,10 +5,6 @@ export interface MainContentWrapperProps {
   className?: string;
 }
 
-export const initialProps: MainContentWrapperProps = {
-  className: "",
-};
-
 const MainContentWrapper = ({
   children,
   className,

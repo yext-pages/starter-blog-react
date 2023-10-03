@@ -22,6 +22,7 @@ const headingVariants = cva("tracking-tight", {
     color: {
       Default: "text-default",
       Light: "text-light",
+      Lighter: "text-lighter",
     },
   },
 });
@@ -44,7 +45,7 @@ export interface HeadingProps {
   /**
    * @displayName Text Color
    */
-  color?: "Default" | "Light";
+  color?: "Default" | "Light" | "Lighter";
   /**
    * @displayName Font Weight
    */

@@ -5,8 +5,9 @@ import { Sizes } from "../../sharedVariants";
 const horizontalDividerVariants = cva("w-0.5 rounded-full", {
   variants: {
     color: {
-      Light: "bg-light",
       Default: "bg-default",
+      Light: "bg-light",
+      Lighter: "bg-lighter",
     },
     height: {
       "0px": "h-0",
@@ -28,7 +29,7 @@ const horizontalDividerVariants = cva("w-0.5 rounded-full", {
 });
 
 export interface HorizontalDividerProps {
-  color: "Default" | "Light";
+  color: "Default" | "Light" | "Lighter";
   height: Sizes;
   className?: string;
 }

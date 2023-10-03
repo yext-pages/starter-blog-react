@@ -4,8 +4,9 @@ import { cn } from "../../utils/cn";
 const textVariants = cva("font-sans", {
   variants: {
     color: {
-      Light: "text-light",
       Default: "text-default",
+      Light: "text-light",
+      Lighter: "text-lighter",
     },
     size: {
       L: "text-lg leading-normal",
@@ -15,7 +16,7 @@ const textVariants = cva("font-sans", {
     },
     weight: {
       Bold: "font-bold",
-      "Semi Bold": "font-medium",
+      "Semi Bold": "font-semibold",
       Regular: "font-regular",
       Light: "font-light",
     },
@@ -72,7 +73,7 @@ export interface TextProps {
   /**
    * @displayName Color
    **/
-  color?: "Light" | "Default";
+  color?: "Light" | "Default" | "Lighter";
   /**
    * @tooltip Used to override the default styles
    **/

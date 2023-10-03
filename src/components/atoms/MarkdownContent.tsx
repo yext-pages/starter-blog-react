@@ -6,7 +6,7 @@ interface MarkdownContentProps {
 
 const MarkdownContent = ({ content }: MarkdownContentProps) => {
   return (
-    <article className="prose lg:prose-lg">
+    <article className="prose">
       <ReactMarkdown>{content}</ReactMarkdown>
     </article>
   );

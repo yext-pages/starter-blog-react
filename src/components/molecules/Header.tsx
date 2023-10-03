@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -23,24 +22,16 @@ export default function Header({ logo, navItems }: HeaderProps) {
   return (
     <header className="text-default border-b text-sm">
       <nav
-        className="mx-auto flex items-center justify-between p-6"
+        className="mx-auto flex items-center justify-between p-6 px-8"
         aria-label="Global"
       >
-        <Link url="./index.html">
-          <span className="sr-only">Company logo</span>
-          <img className="h-8 w-auto" src={logo} alt="Company logo" />
-        </Link>
-        <div className="flex lg:hidden">
-          <button
-            type="button"
-            className="inline-flex cursor-pointer items-center justify-center rounded-md p-2.5"
-            onClick={clickHandler}
-          >
-            <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-          </button>
+        <div className="flex lg:flex-1">
+          <Link url="./index.html">
+            <span className="sr-only">Company logo</span>
+            <img className="h-8 w-auto" src={logo} alt="Company logo" />
+          </Link>
         </div>
-        <div className="hidden lg:flex lg:gap-x-8">
+        <div className="hidden lg:flex lg:gap-x-12">
           {navItems &&
             navItems.map((item) => (
               <Link key={item.label} url={item.uRL}>
@@ -53,6 +44,30 @@ export default function Header({ logo, navItems }: HeaderProps) {
               </Link>
             ))}
         </div>
+        <div className="flex flex-1 items-center justify-end gap-x-6">
+          <a
+            href="#"
+            className="hidden lg:block lg:text-sm lg:font-semibold lg:leading-6"
+          >
+            Log in
+          </a>
+          <a
+            href="#"
+            className="mr-2 rounded-md bg-zinc-900 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-zinc-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-600 lg:mr-0"
+          >
+            Sign up
+          </a>
+        </div>
+        <div className="flex lg:hidden">
+          <button
+            type="button"
+            className="inline-flex cursor-pointer items-center justify-center rounded-md p-2.5"
+            onClick={clickHandler}
+          >
+            <span className="sr-only">Open main menu</span>
+            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+          </button>
+        </div>
       </nav>
       <Dialog
         as="div"
@@ -63,10 +78,16 @@ export default function Header({ logo, navItems }: HeaderProps) {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 lg:px-6">
           <div className="flex items-center justify-between">
-            <Link url="#">
+            <a href="#">
               <span className="sr-only">Company logo</span>
               <img className="h-8 w-auto" src={logo} alt="Company logo" />
-            </Link>
+            </a>
+            <a
+              href="#"
+              className="ml-auto mr-2 rounded-md bg-zinc-900 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-zinc-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-600"
+            >
+              Sign up
+            </a>
             <button
               type="button"
               className="rounded-md p-2.5"
@@ -81,15 +102,27 @@ export default function Header({ logo, navItems }: HeaderProps) {
               <div className="flex flex-col space-y-2 py-6">
                 {navItems &&
                   navItems.map((item) => (
-                    <Link key={item.label} url={item.uRL}>
+                    <a
+                      className="text-default -mx-3 block rounded-lg px-3 py-2 text-sm font-semibold leading-7 hover:bg-zinc-50"
+                      key={item.label}
+                      href={item.uRL}
+                    >
                       <Text
                         text={item.label}
                         color="Default"
                         size="S"
                         weight="Semi Bold"
                       />
-                    </Link>
+                    </a>
                   ))}
+              </div>
+              <div className="py-6">
+                <a
+                  href="#"
+                  className="text-default -mx-3 block rounded-lg px-3 py-2.5 text-sm font-semibold leading-7 hover:bg-zinc-50"
+                >
+                  Log in
+                </a>
               </div>
             </div>
           </div>

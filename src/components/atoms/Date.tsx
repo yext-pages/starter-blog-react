@@ -7,6 +7,7 @@ const dateVariants = cva("font-sans", {
     color: {
       Default: "text-default",
       Light: "text-light",
+      Lighter: "text-lighter",
     },
     weight: {
       Bold: "font-bold",
@@ -39,7 +40,7 @@ export interface DateProps {
   /**
    * @displayName Color
    **/
-  color?: "Light" | "Default";
+  color?: "Light" | "Default" | "Lighter";
   /**
    * @tooltip Used to override the default styles
    **/

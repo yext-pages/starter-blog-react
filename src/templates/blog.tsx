@@ -14,10 +14,11 @@ import Date from "../components/atoms/Date";
 import Heading from "../components/atoms/Heading";
 import Container from "../components/atoms/Container";
 import Text from "../components/atoms/Text";
-import Page from "../components/atoms/Page";
-import Main from "../components/Main";
+import PageWrapper from "../components/atoms/PageWrapper";
+import MainContentWrapper from "../components/atoms/MainContentWrapper";
 import Header from "../components/molecules/Header";
 import Footer from "../components/molecules/Footer";
+import BackButton from "../components/atoms/BackButton";
 
 export const config: TemplateConfig = {
   stream: {
@@ -67,18 +68,34 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (
 
 export default function Blog({ document }: TemplateProps) {
   return (
-    <Page>
+    <PageWrapper>
       <Header
         logo="http://a.mktgcdn.com/p/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/300x300.png"
         navItems={document._site.blogStarter_headerLinks}
       />
-      <Main>
+      <MainContentWrapper>
         <Container
           layout="column"
-          className="mx-auto max-w-2xl gap-4"
-          marginTop="24px"
-          marginBottom="24px"
+          className="mx-auto max-w-2xl gap-8"
+          marginTop="32px"
+          marginBottom="32px"
         >
+          <BackButton backToUrl="./index.html" />
+          <Container layout="row" className="items-center gap-2">
+            <Text
+              text={document.blogStarter_blogAuthor}
+              color="Lighter"
+              weight="Light"
+              size="M"
+            />
+            <HorizontalDivider height="16px" color="Lighter" />
+            <Date
+              color="Lighter"
+              date={document.datePosted}
+              size="M"
+              weight="Light"
+            />
+          </Container>
           <Heading
             text={document.name}
             align="Left"
@@ -86,21 +103,6 @@ export default function Blog({ document }: TemplateProps) {
             weight="Bold"
             color="Default"
           />
-          <Container layout="row" className="items-center gap-2">
-            <Text
-              text={document.blogStarter_blogAuthor}
-              color="Default"
-              weight="Light"
-              size="M"
-            />
-            <HorizontalDivider height="16px" color="Default" />
-            <Date
-              color="Default"
-              date={document.datePosted}
-              size="M"
-              weight="Light"
-            />
-          </Container>
           <Image
             src={document.primaryPhoto.image.url}
             alt={document.primaryPhoto.image.alternateText}
@@ -108,8 +110,8 @@ export default function Blog({ document }: TemplateProps) {
           />
           <MarkdownContent content={document.blogStarter_body.markdown} />
         </Container>
-      </Main>
-      <Footer navItems={document._site.blogStarter_footerLinks} />
-    </Page>
+      </MainContentWrapper>
+      <Footer links={document._site.blogStarter_footerLinks} />
+    </PageWrapper>
   );
 }

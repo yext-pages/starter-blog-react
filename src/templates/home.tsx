@@ -6,27 +6,23 @@ import {
   TemplateProps,
   TemplateRenderProps,
 } from "@yext/pages";
-import Image from "../components/atoms/Image";
-import "../index.css";
-import Heading from "../components/atoms/Heading";
+import MainContentWrapper from "../components/atoms/MainContentWrapper";
 import Container from "../components/atoms/Container";
+import Heading from "../components/atoms/Heading";
+import Image from "../components/atoms/Image";
+import PageWrapper from "../components/atoms/PageWrapper";
 import FeaturedBlogsSection from "../components/molecules/FeaturedBlogsSection";
 import Footer from "../components/molecules/Footer";
-import Main from "../components/Main";
-import Page from "../components/atoms/Page";
 import Header from "../components/molecules/Header";
+import "../index.css";
 
 export const config: TemplateConfig = {
   stream: {
     $id: "home",
     localization: { locales: ["en"] },
     fields: [
-      "id",
       "name",
       "blogStarter_coverPhoto",
-      "blogStarter_heading",
-      "blogStarter_subHeading",
-      "slug",
       "blogStarter_featuredBlogs.id",
       "blogStarter_featuredBlogs.name",
       "blogStarter_featuredBlogs.slug",
@@ -34,7 +30,7 @@ export const config: TemplateConfig = {
       "blogStarter_featuredBlogs.blogStarter_description",
       "blogStarter_featuredBlogs.datePosted",
     ],
-    filter: { entityIds: ["blogStarter_home"] },
+    filter: { entityTypes: ["blogStarter_homePage"] },
   },
 };
 export const getPath: GetPath<TemplateProps> = () => {
@@ -62,17 +58,17 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (
 
 export default function Home({ document }: TemplateProps) {
   return (
-    <Page>
+    <PageWrapper>
       <Header
         logo="http://a.mktgcdn.com/p/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/300x300.png"
         navItems={document._site.blogStarter_headerLinks}
       />
-      <Main>
+      <MainContentWrapper>
         <Container
           layout="column"
-          className="gap-6"
-          marginTop="24px"
-          marginBottom="24px"
+          className="gap-8"
+          marginTop="48px"
+          marginBottom="48px"
         >
           <Image
             src={document.blogStarter_coverPhoto.image.url}
@@ -84,13 +80,18 @@ export default function Home({ document }: TemplateProps) {
             align="Left"
             rank="2"
             weight="Bold"
+            color="Default"
           />
           <FeaturedBlogsSection
             featuredBlogs={document.blogStarter_featuredBlogs}
+            dateSize="XS"
+            descriptionSize="M"
+            titleRank="4"
+            imgShape="Square"
           />
         </Container>
-      </Main>
-      <Footer navItems={document._site.blogStarter_footerLinks} />
-    </Page>
+      </MainContentWrapper>
+      <Footer links={document._site.blogStarter_footerLinks} />
+    </PageWrapper>
   );
 }

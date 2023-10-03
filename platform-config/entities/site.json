@@ -5,6 +5,10 @@
   "content": {
     "blogStarter_footerLinks": [
       {
+        "label": "About",
+        "uRL": "https://yext.com"
+      },
+      {
         "label": "Privacy",
         "uRL": "https://yext.com"
       },
@@ -14,6 +18,10 @@
       },
       {
         "label": "Settings",
+        "uRL": "https://yext.com"
+      },
+      {
+        "label": "Accessibility",
         "uRL": "https://yext.com"
       },
       {
@@ -35,7 +43,7 @@
         "uRL": "https://yext.com"
       },
       {
-        "label": "Login",
+        "label": "Articles",
         "uRL": "https://yext.com"
       }
     ],

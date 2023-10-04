@@ -65,10 +65,15 @@ const containerVariants = cva("", {
       XL: "max-w-5xl",
       None: "max-w-none",
     },
-  },
-  defaultVariants: {
-    layout: "Column",
-    columnSpan: "1",
+    backgroundColor: {
+      Black: "bg-black",
+      "Dark Gray": "bg-gray-900",
+      Gray: "bg-gray-600",
+      "Light Gray": "bg-gray-400",
+      White: "bg-white",
+      Blue: "bg-blue-700",
+      "Dark Blue": "bg-blue-900",
+    },
   },
 });
 
@@ -79,6 +84,18 @@ export interface ContainerProps {
    * @tooltip Defines the layout of the container
    */
   layout?: "Flex" | "Grid" | "Row" | "Column";
+  /**
+   * @displayName Background Color
+   * @tooltip Defines the background color of the container
+   */
+  backgroundColor?:
+    | "White"
+    | "Black"
+    | "Dark Gray"
+    | "Gray"
+    | "Light Gray"
+    | "Blue"
+    | "Dark Blue";
   /**
    * @displayName Flex Gap
    * @tooltip Defines the amount of space between each item. NOTE: Does not work with grid layout
@@ -152,6 +169,7 @@ export interface ContainerProps {
 
 export const initialProps: ContainerProps = {
   layout: "Flex",
+  backgroundColor: "White",
   flexGap: "2",
   itemAlignment: "Start",
   columnCount: "3",
@@ -171,6 +189,7 @@ export const initialProps: ContainerProps = {
 const Container = ({
   className,
   layout,
+  backgroundColor,
   flexGap,
   itemAlignment,
   children,
@@ -191,6 +210,7 @@ const Container = ({
       className={cn(
         containerVariants({
           layout,
+          backgroundColor,
           flexGap,
           itemAlignment,
           className,

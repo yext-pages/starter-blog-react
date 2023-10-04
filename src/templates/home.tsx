@@ -59,7 +59,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (
 
 export default function Home({ document }: TemplateProps) {
   return (
-    <PageWrapper>
+    <PageWrapper backgroundColor="White">
       <Header logo="http://a.mktgcdn.com/p/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/300x300.png" />
       <MainContentWrapper>
         <Container
@@ -78,7 +78,7 @@ export default function Home({ document }: TemplateProps) {
             align="Left"
             rank="2"
             weight="Bold"
-            color="Default"
+            color="Dark Gray"
           />
           <FeaturedBlogsSection
             featuredBlogs={document.blogStarter_featuredBlogs}

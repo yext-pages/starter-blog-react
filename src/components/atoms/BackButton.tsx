@@ -14,7 +14,7 @@ const BackButton = ({ backToUrl }: BackButtonProps) => {
           viewBox="0 0 16 16"
           fill="none"
           aria-hidden="true"
-          className="h-4 w-4 stroke-zinc-500 transition group-hover:stroke-zinc-700"
+          className="h-4 w-4 stroke-gray-500 transition group-hover:stroke-gray-700"
         >
           <path
             d="M7.25 11.25 3.75 8m0 0 3.5-3.25M3.75 8h8.5"

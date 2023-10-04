@@ -20,9 +20,13 @@ const headingVariants = cva("tracking-tight", {
       Bold: "font-bold",
     },
     color: {
-      Default: "text-default",
-      Light: "text-light",
-      Lighter: "text-lighter",
+      Black: "text-black",
+      "Dark Gray": "text-gray-900",
+      Gray: "text-gray-600",
+      "Light Gray": "text-gray-400",
+      White: "text-white",
+      Blue: "text-blue-700",
+      "Dark Blue": "text-blue-900",
     },
   },
 });
@@ -45,7 +49,14 @@ export interface HeadingProps {
   /**
    * @displayName Text Color
    */
-  color?: "Default" | "Light" | "Lighter";
+  color?:
+    | "White"
+    | "Black"
+    | "Dark Gray"
+    | "Gray"
+    | "Light Gray"
+    | "Blue"
+    | "Dark Blue";
   /**
    * @displayName Font Weight
    */
@@ -61,7 +72,7 @@ export const initialProps: HeadingProps = {
   rank: "1",
   align: "Left",
   weight: "Normal",
-  color: "Default",
+  color: "Dark Gray",
   className: "",
 };
 

@@ -71,7 +71,7 @@ const FeaturedBlog = ({
       <Container layout="Column" flexGap="2">
         <Date
           date={datePosted}
-          color="Default"
+          color="Dark Gray"
           size={dateSize}
           weight="Light"
         />
@@ -83,7 +83,7 @@ const FeaturedBlog = ({
             size={descriptionSize}
             text={blogStarter_description}
             maxLines="3"
-            color="Default"
+            color="Dark Gray"
             weight="Light"
           />
         </Container>

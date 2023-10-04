@@ -5,9 +5,13 @@ import { Sizes } from "../../sharedVariants";
 const horizontalDividerVariants = cva("w-0.5 rounded-full", {
   variants: {
     color: {
-      Default: "bg-default",
-      Light: "bg-light",
-      Lighter: "bg-lighter",
+      Black: "bg-black",
+      "Dark Gray": "bg-gray-900",
+      Gray: "bg-gray-600",
+      "Light Gray": "bg-gray-400",
+      White: "bg-white",
+      Blue: "bg-blue-700",
+      "Dark Blue": "bg-blue-900",
     },
     height: {
       "0px": "h-0",
@@ -29,13 +33,20 @@ const horizontalDividerVariants = cva("w-0.5 rounded-full", {
 });
 
 export interface HorizontalDividerProps {
-  color: "Default" | "Light" | "Lighter";
+  color?:
+    | "White"
+    | "Black"
+    | "Dark Gray"
+    | "Gray"
+    | "Light Gray"
+    | "Blue"
+    | "Dark Blue";
   height: Sizes;
   className?: string;
 }
 
 export const initialProps: HorizontalDividerProps = {
-  color: "Default",
+  color: "Dark Gray",
   height: "16px",
 };
 

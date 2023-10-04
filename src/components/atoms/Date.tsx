@@ -5,9 +5,13 @@ import { cn } from "../../utils/cn";
 const dateVariants = cva("font-sans", {
   variants: {
     color: {
-      Default: "text-default",
-      Light: "text-light",
-      Lighter: "text-lighter",
+      Black: "text-black",
+      "Dark Gray": "text-gray-900",
+      Gray: "text-gray-600",
+      "Light Gray": "text-gray-400",
+      White: "text-white",
+      Blue: "text-blue-700",
+      "Dark Blue": "text-blue-900",
     },
     weight: {
       Bold: "font-bold",
@@ -40,7 +44,14 @@ export interface DateProps {
   /**
    * @displayName Color
    **/
-  color?: "Light" | "Default" | "Lighter";
+  color?:
+    | "White"
+    | "Black"
+    | "Dark Gray"
+    | "Gray"
+    | "Light Gray"
+    | "Blue"
+    | "Dark Blue";
   /**
    * @tooltip Used to override the default styles
    **/
@@ -49,7 +60,7 @@ export interface DateProps {
 
 export const initialProps: DateProps = {
   date: "2023-06-01",
-  color: "Default",
+  color: "Dark Gray",
   weight: "Regular",
   size: "M",
 };

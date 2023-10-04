@@ -84,7 +84,7 @@ export default function Footer() {
             <div key={item.label} className="pb-6">
               <a
                 href={item.uRL}
-                className="text-light hover:text-lighter text-sm leading-6"
+                className="text-sm leading-6 text-gray-600 hover:text-gray-400"
               >
                 {item.label}
               </a>
@@ -96,14 +96,14 @@ export default function Footer() {
             <a
               key={item.name}
               href={item.href}
-              className="text-light hover:text-lighter"
+              className="text-gray-600 hover:text-gray-400"
             >
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />
             </a>
           ))}
         </div>
-        <p className="text-lighter mt-10 text-center text-xs leading-5">
+        <p className="mt-10 text-center text-xs leading-5 text-gray-400">
           &copy; 2020 Your Company, Inc. All rights reserved.
         </p>
       </div>

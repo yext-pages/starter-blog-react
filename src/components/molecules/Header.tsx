@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Link from "../atoms/Link";
-import Text from "../atoms/Text";
 
 export interface HeaderProps {
   logo: string;
@@ -23,33 +21,30 @@ export default function Header({ logo }: HeaderProps) {
   }
 
   return (
-    <header className="text-default h-20 border-b text-sm">
+    <header className="h-20 border-b text-sm text-gray-900">
       <nav
         className="mx-auto flex h-full items-center justify-between px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <Link url="./index.html">
+          <a href="./index.html">
             <span className="sr-only">Company logo</span>
             <img className="h-8 w-auto" src={logo} alt="Company logo" />
-          </Link>
+          </a>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <Link key={item.label} url={item.uRL}>
-              <Text
-                text={item.label}
-                color="Default"
-                size="S"
-                weight="Semi Bold"
-              />
-            </Link>
+            <a key={item.label} href={item.uRL}>
+              <span className="text-sm font-semibold text-gray-900 hover:text-gray-600">
+                {item.label}
+              </span>
+            </a>
           ))}
         </div>
         <div className="flex flex-1 items-center justify-end gap-x-6">
           <a
             href="#"
-            className="hidden lg:block lg:text-sm lg:font-semibold lg:leading-6"
+            className="hidden text-gray-900 hover:text-gray-600 lg:block lg:text-sm lg:font-semibold lg:leading-6"
           >
             Log in
           </a>
@@ -103,24 +98,17 @@ export default function Header({ logo }: HeaderProps) {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="flex flex-col space-y-2 py-6">
                 {navigation.map((item) => (
-                  <a
-                    className="text-default -mx-3 block rounded-lg px-3 py-2 text-sm font-semibold leading-7 hover:bg-zinc-50"
-                    key={item.label}
-                    href={item.uRL}
-                  >
-                    <Text
-                      text={item.label}
-                      color="Default"
-                      size="S"
-                      weight="Semi Bold"
-                    />
+                  <a key={item.label} href={item.uRL}>
+                    <span className="text-sm font-semibold text-gray-900 hover:text-gray-600">
+                      {item.label}
+                    </span>
                   </a>
                 ))}
               </div>
               <div className="py-6">
                 <a
                   href="#"
-                  className="text-default -mx-3 block rounded-lg px-3 py-2.5 text-sm font-semibold leading-7 hover:bg-zinc-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-sm font-semibold leading-7 text-gray-900 hover:bg-zinc-50"
                 >
                   Log in
                 </a>

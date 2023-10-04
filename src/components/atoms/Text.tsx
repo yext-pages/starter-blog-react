@@ -4,9 +4,13 @@ import { cn } from "../../utils/cn";
 const textVariants = cva("font-sans", {
   variants: {
     color: {
-      Default: "text-default",
-      Light: "text-light",
-      Lighter: "text-lighter",
+      Black: "text-black",
+      "Dark Gray": "text-gray-900",
+      Gray: "text-gray-600",
+      "Light Gray": "text-gray-400",
+      White: "text-white",
+      Blue: "text-blue-700",
+      "Dark Blue": "text-blue-900",
     },
     size: {
       L: "text-lg leading-normal",
@@ -72,7 +76,14 @@ export interface TextProps {
   /**
    * @displayName Color
    **/
-  color?: "Light" | "Default" | "Lighter";
+  color?:
+    | "White"
+    | "Black"
+    | "Dark Gray"
+    | "Gray"
+    | "Light Gray"
+    | "Blue"
+    | "Dark Blue";
   /**
    * @displayName Max Lines
    * @tooltip Defines the number of lines of text shown before truncation
@@ -91,7 +102,7 @@ export const initialProps: TextProps = {
   align: "Left",
   italic: "No",
   uppercase: "No",
-  color: "Default",
+  color: "Dark Gray",
   maxLines: "None",
   className: "",
 };

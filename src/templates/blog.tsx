@@ -68,7 +68,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (
 
 export default function Blog({ document }: TemplateProps) {
   return (
-    <PageWrapper>
+    <PageWrapper backgroundColor="White">
       <Header logo="http://a.mktgcdn.com/p/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/300x300.png" />
       <MainContentWrapper>
         <Container
@@ -84,13 +84,13 @@ export default function Blog({ document }: TemplateProps) {
           <Container layout="Row" flexGap="2" itemAlignment="Center">
             <Text
               text={document.blogStarter_blogAuthor}
-              color="Lighter"
+              color="Light Gray"
               weight="Light"
               size="M"
             />
-            <HorizontalDivider height="16px" color="Lighter" />
+            <HorizontalDivider height="16px" color="Light Gray" />
             <Date
-              color="Lighter"
+              color="Light Gray"
               date={document.datePosted}
               size="M"
               weight="Light"
@@ -101,7 +101,7 @@ export default function Blog({ document }: TemplateProps) {
             align="Left"
             rank="1"
             weight="Bold"
-            color="Default"
+            color="Dark Gray"
           />
           <Image
             src={document.primaryPhoto.image.url}

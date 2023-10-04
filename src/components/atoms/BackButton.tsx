@@ -1,4 +1,8 @@
 export interface BackButtonProps {
+  /**
+   * @displayName Back To URL
+   * @tooltip Controls the URL the back button navigates to
+   */
   backToUrl: string;
 }
 

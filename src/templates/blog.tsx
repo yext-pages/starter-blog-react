@@ -47,11 +47,11 @@ export const getPath: GetPath<TemplateProps> = ({ document }) => {
   return document.slug ?? document.entityId.toString();
 };
 
-export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (
-  data
-): HeadConfig => {
+export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
+  document,
+}): HeadConfig => {
   return {
-    title: "Blog Home",
+    title: document.name,
     charset: "UTF-8",
     viewport: "width=device-width, initial-scale=1",
     tags: [

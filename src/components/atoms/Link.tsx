@@ -1,5 +1,9 @@
 export interface LinkProps {
   children: React.ReactNode;
+  /**
+   * @displayName URL
+   * @tooltip Controls the URL the link should redirect to
+   */
   url: string;
 }
 

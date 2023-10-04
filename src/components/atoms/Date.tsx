@@ -31,19 +31,23 @@ const dateVariants = cva("font-sans", {
 export interface DateProps {
   /**
    * @displayName Date
-   **/
+   * @tooltip Controls the date to display
+   */
   date?: string;
   /**
    * @displayName Size
-   **/
+   * @tooltip Controls the font size of the date
+   */
   size?: "XS" | "S" | "M" | "L";
   /**
    * @displayName Weight
-   **/
+   * @tooltip Controls the font weight of the date
+   */
   weight?: "Light" | "Regular" | "Semi Bold" | "Bold";
   /**
    * @displayName Color
-   **/
+   * @tooltip Controls the text color of the date
+   */
   color?:
     | "White"
     | "Black"

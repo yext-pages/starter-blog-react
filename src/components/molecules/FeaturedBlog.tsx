@@ -8,43 +8,53 @@ import Image from "../atoms/Image";
 interface FeaturedBlogProps {
   /**
    * @displayName Blog Title
-   **/
+   * @tooltip Controls the title of the blog to display
+   */
   name?: string;
   /**
-   * @displayName Blog Post URL
-   **/
+   * @displayName Blog URL
+   * @tooltip Controls the URL the blog redirects to
+   */
   slug?: string;
   /**
-   * @displayName Blog Post Image URL
-   **/
+   * @displayName Blog Image URL
+   * @tooltip Source URL of the blog image
+   */
   src?: string;
   /**
-   * @displayName Alt Text
-   **/
+   * @displayName Blog Image Alternate Text
+   * @tooltip Alternate text for the blog image
+   */
   alt?: string;
   /**
    * @displayName Blog Description
-   **/
+   * @tooltip Controls the description to display for the blog
+   */
   blogStarter_description?: string;
   /**
    * @displayName Date Posted
-   **/
+   * @tooltip Controls the posted date to display for th eblog
+   */
   datePosted?: string;
   /**
    * @displayName Image Shape
-   **/
+   * @tooltip Controls the shape of the blog image
+   */
   imgShape: "Rectangle" | "Square";
   /**
    * @displayName Date Size
-   **/
+   * @tooltip Controls the size of the posted date text
+   */
   dateSize: "XS" | "S" | "M" | "L";
   /**
    * @displayName Title Rank
-   **/
+   * @tooltip Controls whether the title is an h1, h2, h3 or h4
+   */
   titleRank: "1" | "2" | "3" | "4";
   /**
    * @displayName Description Size
-   **/
+   * @tooltip Controls the size of the description text
+   */
   descriptionSize: "XS" | "S" | "M" | "L";
 }
 

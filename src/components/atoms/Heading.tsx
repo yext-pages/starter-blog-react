@@ -33,21 +33,23 @@ const headingVariants = cva("tracking-tight", {
 
 export interface HeadingProps {
   /**
-   * @tooltip Content of the heading
    * @displayName Text
+   * @tooltip Controls the content of the heading
    */
   text: string;
   /**
-   * @tooltip Defines whether the heading is an h1, h2, or h3.
    * @displayName Rank
+   * @tooltip Controls whether the heading is an h1, h2, or h3.
    */
   rank?: "1" | "2" | "3" | "4";
   /**
    * @displayName Text Align
+   * @tooltip Controls the alignment of the text
    */
   align?: "Left" | "Center" | "Right";
   /**
    * @displayName Text Color
+   * @tooltip Controls the color of the text
    */
   color?:
     | "White"
@@ -59,6 +61,7 @@ export interface HeadingProps {
     | "Dark Blue";
   /**
    * @displayName Font Weight
+   * @tooltip Controls the font weight of the text
    */
   weight?: "Normal" | "Semi Bold" | "Bold";
 }

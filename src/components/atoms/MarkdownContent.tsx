@@ -1,6 +1,10 @@
 import ReactMarkdown from "react-markdown";
 
 interface MarkdownContentProps {
+  /**
+   * @displayName Content
+   * @tooltip Controls the markdown content to display
+   */
   content: string;
 }
 

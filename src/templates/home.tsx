@@ -20,17 +20,7 @@ export const config: TemplateConfig = {
   stream: {
     $id: "home",
     localization: { locales: ["en"] },
-    fields: [
-      "name",
-      "slug",
-      "blogStarter_coverPhoto",
-      "blogStarter_featuredBlogs.id",
-      "blogStarter_featuredBlogs.name",
-      "blogStarter_featuredBlogs.slug",
-      "blogStarter_featuredBlogs.primaryPhoto",
-      "blogStarter_featuredBlogs.blogStarter_description",
-      "blogStarter_featuredBlogs.datePosted",
-    ],
+    fields: ["name", "slug", "blogStarter_coverPhoto"],
     filter: { entityTypes: ["blogStarter_homePage"] },
   },
 };
@@ -82,7 +72,6 @@ export default function Home({ document }: TemplateProps) {
             color="Dark Gray"
           />
           <FeaturedBlogsSection
-            featuredBlogs={document.blogStarter_featuredBlogs}
             dateSize="XS"
             descriptionSize="M"
             titleRank="4"

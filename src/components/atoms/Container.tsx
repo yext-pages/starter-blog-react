@@ -81,12 +81,12 @@ export interface ContainerProps {
   children?: React.ReactNode;
   /**
    * @displayName Layout
-   * @tooltip Defines the layout of the container
+   * @tooltip Controls the layout of the container
    */
   layout?: "Flex" | "Grid" | "Row" | "Column";
   /**
    * @displayName Background Color
-   * @tooltip Defines the background color of the container
+   * @tooltip Controls the background color of the container
    */
   backgroundColor?:
     | "White"
@@ -98,67 +98,67 @@ export interface ContainerProps {
     | "Dark Blue";
   /**
    * @displayName Flex Gap
-   * @tooltip Defines the amount of space between each item. NOTE: Does not work with grid layout
+   * @tooltip Controls the amount of space between each item. NOTE: Does not work with grid layout
    */
   flexGap?: "2" | "4" | "6" | "8" | "10" | "12";
   /**
    * @displayName Item Alignment
-   * @tooltip Defines the alignment of items within a container. NOTE: Does not work with grid layout
+   * @tooltip Controls the alignment of items within a container. NOTE: Does not work with grid layout
    */
   itemAlignment?: "Start" | "Center" | "End";
   /**
    * @displayName Column Count
-   * @tooltip Defines the number of columns the container has. NOTE: Only works with grid layout
+   * @tooltip Controls the number of columns the container has. NOTE: Only works with grid layout
    */
   columnCount?: "1" | "2" | "3" | "4" | "5" | "6";
   /**
    * @displayName Column Span
-   * @tooltip Defines the number of columns the container spans. NOTE: Only works with grid layout
+   * @tooltip Controls the number of columns the container spans. NOTE: Only works with grid layout
    */
   columnSpan?: "1" | "2" | "3" | "4" | "5" | "6";
   /**
    * @displayName Padding Top
-   * @tooltip Defines the padding top of the container
+   * @tooltip Controls the padding top of the container
    */
   paddingTop?: Sizes;
   /**
    * @displayName Padding Bottom
-   * @tooltip Defines the padding bottom of the container
+   * @tooltip Controls the padding bottom of the container
    */
   paddingBottom?: Sizes;
   /**
    * @displayName Padding Left
-   * @tooltip Defines the padding left of the container
+   * @tooltip Controls the padding left of the container
    */
   paddingLeft?: Sizes;
   /**
    * @displayName Padding Right
-   * @tooltip Defines the padding right of the container
+   * @tooltip Controls the padding right of the container
    */
   paddingRight?: Sizes;
   /**
    * @displayName Margin Top
-   * @tooltip Defines the margin top of the container
+   * @tooltip Controls the margin top of the container
    */
   marginTop?: Sizes;
   /**
    * @displayName Margin Bottom
-   * @tooltip Defines the margin bottom of the container
+   * @tooltip Controls the margin bottom of the container
    */
   marginBottom?: Sizes;
   /**
    * @displayName Margin Left
-   * @tooltip Defines the margin left of the container
+   * @tooltip Controls the margin left of the container
    */
   marginLeft?: Sizes | "Auto";
   /**
    * @displayName Margin Right
-   * @tooltip Defines the margin right of the container
+   * @tooltip Controls the margin right of the container
    */
   marginRight?: Sizes | "Auto";
   /**
    * @displayName Max Width
-   * @tooltip Defines the max width of the container
+   * @tooltip Controls the max width of the container
    */
   maxWidth?: "XS" | "S" | "M" | "L" | "XL" | "None";
 }

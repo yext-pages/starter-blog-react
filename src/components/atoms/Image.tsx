@@ -20,9 +20,25 @@ const imageVariants = cva(
 );
 
 export interface ImageProps {
+  /**
+   * @displayName Source
+   * @tooltip The URL of the image to display
+   */
   src: string;
+  /**
+   * @displayName Alternate Text
+   * @tooltip Controls the alternate text of the img tag
+   */
   alt: string;
+  /**
+   * @displayName Aspect Ratio
+   * @tooltip Controls the aspect ratio of the image
+   */
   aspect: "Square" | "Rectangle" | "None";
+  /**
+   * @displayName Size
+   * @tooltip Controls the size of the image
+   */
   size?: "Small" | "Medium" | "Large";
 }
 

@@ -51,31 +51,38 @@ const textVariants = cva("font-sans", {
 export interface TextProps {
   /**
    * @displayName Text
-   **/
+   * @tooltip Controls the text to display
+   */
   text?: string;
   /**
    * @displayName Size
-   **/
+   * @tooltip Controls the font size of the text
+   */
   size?: "XS" | "S" | "M" | "L";
   /**
    * @displayName Weight
-   **/
+   * @tooltip Controls the font weight of the text
+   */
   weight?: "Light" | "Regular" | "Semi Bold" | "Bold";
   /**
-   * @displayName Align
-   **/
+   * @displayName Alignment
+   * @tooltip Controls the alignment of the text
+   */
   align?: "Left" | "Center" | "Right";
   /**
    * @displayName Italic
-   **/
+   * @tooltip Controls whether the font is italic
+   */
   italic?: "Yes" | "No";
   /**
    * @displayName Uppercase
-   **/
+   * @tooltip Controls whether the font is uppercase
+   */
   uppercase?: "Yes" | "No";
   /**
    * @displayName Color
-   **/
+   * @tooltip Controls the color of the text
+   */
   color?:
     | "White"
     | "Black"
@@ -86,7 +93,7 @@ export interface TextProps {
     | "Dark Blue";
   /**
    * @displayName Max Lines
-   * @tooltip Defines the number of lines of text shown before truncation
+   * @tooltip Controls the number of lines of text shown before truncation
    **/
   maxLines?: "1" | "2" | "3" | "4" | "5" | "None";
 }

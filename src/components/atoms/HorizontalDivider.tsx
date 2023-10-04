@@ -33,6 +33,10 @@ const horizontalDividerVariants = cva("w-0.5 rounded-full", {
 });
 
 export interface HorizontalDividerProps {
+  /**
+   * @displayName Color
+   * @tooltip Controls the color of the divider
+   */
   color?:
     | "White"
     | "Black"
@@ -41,6 +45,10 @@ export interface HorizontalDividerProps {
     | "Light Gray"
     | "Blue"
     | "Dark Blue";
+  /**
+   * @displayName Height
+   * @tooltip Controls the height of the divider
+   */
   height: Sizes;
 }
 

@@ -32,6 +32,10 @@ export interface PageWrapperProps {
 }
 
 export const initialProps: PageWrapperProps = {
+  /**
+   * @displayName Background Color
+   * @tooltip Controls the background color of the page
+   */
   backgroundColor: "White",
 };
 

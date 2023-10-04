@@ -61,10 +61,6 @@ export interface HeadingProps {
    * @displayName Font Weight
    */
   weight?: "Normal" | "Semi Bold" | "Bold";
-  /**
-   * @tooltip Used to override the default styles
-   */
-  className?: string;
 }
 
 export const initialProps: HeadingProps = {
@@ -73,23 +69,13 @@ export const initialProps: HeadingProps = {
   align: "Left",
   weight: "Normal",
   color: "Dark Gray",
-  className: "",
 };
 
-const Heading = ({
-  text,
-  rank,
-  className,
-  align,
-  weight,
-  color,
-}: HeadingProps) => {
+const Heading = ({ text, rank, align, weight, color }: HeadingProps) => {
   const Tag: any = rank ? `h${rank}` : "span";
 
   return (
-    <Tag
-      className={cn(headingVariants({ rank, align, className, color, weight }))}
-    >
+    <Tag className={cn(headingVariants({ rank, align, color, weight }))}>
       {text}
     </Tag>
   );

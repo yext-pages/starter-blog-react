@@ -52,10 +52,6 @@ export interface DateProps {
     | "Light Gray"
     | "Blue"
     | "Dark Blue";
-  /**
-   * @tooltip Used to override the default styles
-   **/
-  className?: string;
 }
 
 export const initialProps: DateProps = {
@@ -65,7 +61,7 @@ export const initialProps: DateProps = {
   size: "M",
 };
 
-const Date = ({ date, color, weight, size, className }: DateProps) => {
+const Date = ({ date, color, weight, size }: DateProps) => {
   return (
     <p
       className={cn(
@@ -73,7 +69,6 @@ const Date = ({ date, color, weight, size, className }: DateProps) => {
           size,
           weight,
           color,
-          className,
         })
       )}
     >

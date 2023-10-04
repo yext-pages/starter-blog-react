@@ -107,6 +107,7 @@ export default function Blog({ document }: TemplateProps) {
             src={document.primaryPhoto.image.url}
             alt={document.primaryPhoto.image.alternateText}
             aspect="Rectangle"
+            size="Large"
           />
           <MarkdownContent content={document.blogStarter_body.markdown} />
         </Container>

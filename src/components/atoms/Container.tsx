@@ -161,10 +161,6 @@ export interface ContainerProps {
    * @tooltip Defines the max width of the container
    */
   maxWidth?: "XS" | "S" | "M" | "L" | "XL" | "None";
-  /**
-   * @tooltip Used to override the default styles
-   */
-  className?: string;
 }
 
 export const initialProps: ContainerProps = {
@@ -183,11 +179,9 @@ export const initialProps: ContainerProps = {
   marginLeft: "0px",
   marginRight: "0px",
   maxWidth: "None",
-  className: "",
 };
 
 const Container = ({
-  className,
   layout,
   backgroundColor,
   flexGap,
@@ -213,7 +207,6 @@ const Container = ({
           backgroundColor,
           flexGap,
           itemAlignment,
-          className,
           columnCount,
           columnSpan,
           paddingBottom,

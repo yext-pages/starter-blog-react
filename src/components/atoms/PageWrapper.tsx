@@ -29,24 +29,18 @@ export interface PageWrapperProps {
     | "Blue"
     | "Dark Blue";
   children?: React.ReactNode;
-  className?: string;
 }
 
 export const initialProps: PageWrapperProps = {
   backgroundColor: "White",
 };
 
-const PageWrapper = ({
-  children,
-  className,
-  backgroundColor,
-}: PageWrapperProps) => {
+const PageWrapper = ({ children, backgroundColor }: PageWrapperProps) => {
   return (
     <div
       className={cn(
         pageWrapperVariants({
           backgroundColor,
-          className,
         })
       )}
     >

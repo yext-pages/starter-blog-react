@@ -42,7 +42,6 @@ export interface HorizontalDividerProps {
     | "Blue"
     | "Dark Blue";
   height: Sizes;
-  className?: string;
 }
 
 export const initialProps: HorizontalDividerProps = {
@@ -50,18 +49,13 @@ export const initialProps: HorizontalDividerProps = {
   height: "16px",
 };
 
-const HorizontalDivider = ({
-  color,
-  height,
-  className,
-}: HorizontalDividerProps) => {
+const HorizontalDivider = ({ color, height }: HorizontalDividerProps) => {
   return (
     <span
       className={cn(
         horizontalDividerVariants({
           height,
           color,
-          className,
         })
       )}
     />

@@ -2,18 +2,10 @@ import { cn } from "../../utils/cn";
 
 export interface MainContentWrapperProps {
   children?: React.ReactNode;
-  className?: string;
 }
 
-const MainContentWrapper = ({
-  children,
-  className,
-}: MainContentWrapperProps) => {
-  return (
-    <main className={cn("mx-auto max-w-5xl px-6 pb-52", className)}>
-      {children}
-    </main>
-  );
+const MainContentWrapper = ({ children }: MainContentWrapperProps) => {
+  return <main className="mx-auto max-w-5xl px-6 pb-52">{children}</main>;
 };
 
 export default MainContentWrapper;

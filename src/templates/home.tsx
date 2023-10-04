@@ -72,6 +72,7 @@ export default function Home({ document }: TemplateProps) {
             src={document.blogStarter_coverPhoto.image.url}
             alt={document.blogStarter_coverPhoto.image.alternateText}
             aspect="Rectangle"
+            size="Large"
           />
           <Heading
             text="Featured Articles"

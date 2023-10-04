@@ -89,10 +89,6 @@ export interface TextProps {
    * @tooltip Defines the number of lines of text shown before truncation
    **/
   maxLines?: "1" | "2" | "3" | "4" | "5" | "None";
-  /**
-   * @tooltip Used to override the default styles
-   **/
-  className?: string;
 }
 
 export const initialProps: TextProps = {
@@ -104,7 +100,6 @@ export const initialProps: TextProps = {
   uppercase: "No",
   color: "Dark Gray",
   maxLines: "None",
-  className: "",
 };
 
 const Text = ({
@@ -116,7 +111,6 @@ const Text = ({
   uppercase,
   color,
   maxLines,
-  className,
 }: TextProps) => {
   return (
     <p
@@ -129,7 +123,6 @@ const Text = ({
           uppercase,
           color,
           maxLines,
-          className,
         })
       )}
     >

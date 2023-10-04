@@ -3,6 +3,10 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export interface HeaderProps {
+  /**
+   * @displayName Logo
+   * @tooltip Controls the logo to display in the header
+   */
   logo: string;
 }
 

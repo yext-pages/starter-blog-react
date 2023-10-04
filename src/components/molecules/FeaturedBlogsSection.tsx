@@ -24,6 +24,13 @@ export interface FeaturedBlogsSectionProps {
   descriptionSize: "XS" | "S" | "M" | "L";
 }
 
+export const initialProps: FeaturedBlogsSectionProps = {
+  imgShape: "Square",
+  dateSize: "S",
+  titleRank: "3",
+  descriptionSize: "S",
+};
+
 const featuredBlogs = [
   {
     blogStarter_description:

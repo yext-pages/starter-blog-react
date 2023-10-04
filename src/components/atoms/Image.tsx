@@ -43,7 +43,7 @@ export interface ImageProps {
 }
 
 export const initialProps: ImageProps = {
-  src: "https://dynl.mktgcdn.com/p/CSFKvh8AjX-j6N8xztp5eNVo75d-4Hc4afbbGzBAeiE/1280x1280",
+  src: "https://a.mktgcdn.com/p/2L6Bp69LgXuwu_TPYmkvWNy24VxmOpmae33-f4fLlM8/1920x1280.jpg",
   alt: "Light green backpack with black canvas straps and front zipper pouch.",
   aspect: "Rectangle",
   size: "Large",

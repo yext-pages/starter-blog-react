@@ -5,45 +5,39 @@
   "content": {
     "blogStarter_coverPhoto": {
       "image": {
-        "alternateText": "new york city",
-        "height": 1441,
+        "alternateText": "skyline view of new york city focused on the empire state building",
+        "height": 1280,
         "thumbnails": [
           {
-            "height": 1441,
-            "url": "http://a.mktgcdn.com/p/J5qB-bn1fUoARkUX0W2N3-GUmiCmgAmgpLpfz2rPSHE/2008x1441.jpg",
-            "width": 2008
+            "height": 1280,
+            "url": "https://a.mktgcdn.com/p/2L6Bp69LgXuwu_TPYmkvWNy24VxmOpmae33-f4fLlM8/1920x1280.jpg",
+            "width": 1920
           },
           {
-            "height": 1363,
-            "url": "http://a.mktgcdn.com/p/J5qB-bn1fUoARkUX0W2N3-GUmiCmgAmgpLpfz2rPSHE/1900x1363.jpg",
+            "height": 1267,
+            "url": "https://a.mktgcdn.com/p/2L6Bp69LgXuwu_TPYmkvWNy24VxmOpmae33-f4fLlM8/1900x1267.jpg",
             "width": 1900
           },
           {
-            "height": 444,
-            "url": "http://a.mktgcdn.com/p/J5qB-bn1fUoARkUX0W2N3-GUmiCmgAmgpLpfz2rPSHE/619x444.jpg",
+            "height": 413,
+            "url": "https://a.mktgcdn.com/p/2L6Bp69LgXuwu_TPYmkvWNy24VxmOpmae33-f4fLlM8/619x413.jpg",
             "width": 619
           },
           {
-            "height": 431,
-            "url": "http://a.mktgcdn.com/p/J5qB-bn1fUoARkUX0W2N3-GUmiCmgAmgpLpfz2rPSHE/600x431.jpg",
+            "height": 400,
+            "url": "https://a.mktgcdn.com/p/2L6Bp69LgXuwu_TPYmkvWNy24VxmOpmae33-f4fLlM8/600x400.jpg",
             "width": 600
           },
           {
-            "height": 141,
-            "url": "http://a.mktgcdn.com/p/J5qB-bn1fUoARkUX0W2N3-GUmiCmgAmgpLpfz2rPSHE/196x141.jpg",
+            "height": 131,
+            "url": "https://a.mktgcdn.com/p/2L6Bp69LgXuwu_TPYmkvWNy24VxmOpmae33-f4fLlM8/196x131.jpg",
             "width": 196
           }
         ],
-        "url": "https://a.mktgcdn.com/p/J5qB-bn1fUoARkUX0W2N3-GUmiCmgAmgpLpfz2rPSHE/2008x1441.jpg",
-        "width": 2008
+        "url": "https://a.mktgcdn.com/p/2L6Bp69LgXuwu_TPYmkvWNy24VxmOpmae33-f4fLlM8/1920x1280.jpg",
+        "width": 1920
       }
     },
-    "blogStarter_featuredBlogs": [
-      "blogStarter_blog-chelsea",
-      "blogStarter_blog-fidi",
-      "blogStarter_blog-les",
-      "blogStarter_blog-williamsburg"
-    ],
     "blogStarter_heading": "NYC Blog",
     "blogStarter_subHeading": "Your guide to the best neighborhoods in The Big Apple.",
     "logo": {

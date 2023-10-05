@@ -62,8 +62,8 @@ interface FeaturedBlogProps {
 export const initialProps: FeaturedBlogProps = {
   name: "Blog Post Title",
   slug: "blog-post-example",
-  src: "http://a.mktgcdn.com/p/G_jLt9S27Dwyvf26th8ZsXNmCqXTgUh9TEuGfJxtkuo/2070x1380.jpg",
-  alt: "skyline view of new york city",
+  src: "https://placehold.co/1920x1280",
+  alt: "Gray placeholder image.",
   blogStarter_description:
     "This is a description for a blog post. Fill this in with whatever content you'd like. If you're adding this component to an entity-powered page, you may also reference a field from the Knowledge Graph to display",
   datePosted: "03-05-2023",

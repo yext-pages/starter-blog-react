@@ -1,5 +1,5 @@
 import { formatDate } from "../../utils/formatDate";
-import { cva } from "class-variance-authority";
+import { cva } from "cva";
 import { cn } from "../../utils/cn";
 
 const dateVariants = cva("font-sans", {

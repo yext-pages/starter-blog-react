@@ -25,7 +25,6 @@
     "@heroicons/react": "^2.0.18",
     "@vitejs/plugin-react": "^4.0.2",
     "@yext/studio": "^0.25.0",
-    "class-variance-authority": "^0.7.0",
     "clsx": "^1.2.1",
     "cva": "npm:class-variance-authority@^0.7.0",
     "react": "^18.0.2",

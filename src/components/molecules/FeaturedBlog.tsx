@@ -4,6 +4,7 @@ import Container from "../atoms/Container";
 import Text from "../atoms/Text";
 import Heading from "../atoms/Heading";
 import Image from "../atoms/Image";
+import { TextSizes } from "../../sharedVariants";
 
 interface FeaturedBlogProps {
   /**
@@ -45,7 +46,7 @@ interface FeaturedBlogProps {
    * @displayName Date Size
    * @tooltip Controls the size of the posted date text
    */
-  dateSize: "XS" | "S" | "M" | "L";
+  dateSize: TextSizes;
   /**
    * @displayName Title Rank
    * @tooltip Controls whether the title is an h1, h2, h3 or h4
@@ -55,7 +56,7 @@ interface FeaturedBlogProps {
    * @displayName Description Size
    * @tooltip Controls the size of the description text
    */
-  descriptionSize: "XS" | "S" | "M" | "L";
+  descriptionSize: TextSizes;
 }
 
 export const initialProps: FeaturedBlogProps = {
@@ -91,7 +92,7 @@ const FeaturedBlog = ({
         <Date
           date={datePosted}
           color="Dark Gray"
-          size={dateSize}
+          textSize={dateSize}
           weight="Light"
         />
         <Container layout="Column" flexGap="2">
@@ -99,7 +100,7 @@ const FeaturedBlog = ({
             <Heading rank={titleRank} weight="Semi Bold" text={name || ""} />
           </Link>
           <Text
-            size={descriptionSize}
+            textSize={descriptionSize}
             text={blogStarter_description}
             maxLines="3"
             color="Dark Gray"

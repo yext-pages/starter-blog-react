@@ -29,7 +29,7 @@ const BasicLayout = () => {
           />
           <Text
             text="Welcome to your blank canvas."
-            size="L"
+            textSize="L"
             weight="Regular"
             color="Dark Gray"
             align="Center"
@@ -42,7 +42,7 @@ const BasicLayout = () => {
           />
           <Text
             text="Use the variety of components and containers this template provides to transform this layout into a new page for your site."
-            size="L"
+            textSize="L"
             weight="Regular"
             color="Dark Gray"
             align="Center"

@@ -1,3 +1,16 @@
+export type TextSizes = "XS" | "S" | "M" | "L";
+
+export type Weights = "Light" | "Regular" | "Semi Bold" | "Bold";
+
+export type Colors =
+  | "White"
+  | "Black"
+  | "Dark Gray"
+  | "Gray"
+  | "Light Gray"
+  | "Blue"
+  | "Dark Blue";
+
 export type Sizes =
   | "0px"
   | "4px"
@@ -150,4 +163,55 @@ export const marginBottom = {
   "80px": "mb-20",
   "88px": "mb-22",
   "96px": "mb-24",
+};
+
+export const backgroundColor = {
+  Black: "bg-black",
+  "Dark Gray": "bg-gray-900",
+  Gray: "bg-gray-600",
+  "Light Gray": "bg-gray-400",
+  White: "bg-white",
+  Blue: "bg-blue-700",
+  "Dark Blue": "bg-blue-900",
+};
+
+export const color = {
+  Black: "text-black",
+  "Dark Gray": "text-gray-900",
+  Gray: "text-gray-600",
+  "Light Gray": "text-gray-400",
+  White: "text-white",
+  Blue: "text-blue-700",
+  "Dark Blue": "text-blue-900",
+};
+
+export const weight = {
+  Bold: "font-bold",
+  "Semi Bold": "font-medium",
+  Regular: "font-regular",
+  Light: "font-light",
+};
+
+export const height = {
+  "0px": "h-0",
+  "4px": "h-1",
+  "8px": "h-2",
+  "16px": "h-4",
+  "24px": "h-6",
+  "32px": "h-8",
+  "40px": "h-10",
+  "48px": "h-12",
+  "56px": "h-14",
+  "64px": "h-16",
+  "72px": "h-18",
+  "80px": "h-20",
+  "88px": "h-22",
+  "96px": "h-24",
+};
+
+export const textSize = {
+  L: "text-lg leading-normal",
+  M: "text-base leading-normal",
+  S: "text-sm leading-normal",
+  XS: "text-xs leading-normal",
 };

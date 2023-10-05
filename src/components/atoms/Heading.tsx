@@ -1,5 +1,6 @@
 import { cva } from "cva";
 import { cn } from "../../utils/cn";
+import { Colors, Weights, color, weight } from "../../sharedVariants";
 
 const headingVariants = cva("tracking-tight", {
   variants: {
@@ -14,20 +15,8 @@ const headingVariants = cva("tracking-tight", {
       Center: "text-center",
       Right: "text-right",
     },
-    weight: {
-      Normal: "font-normal",
-      "Semi Bold": "font-semibold",
-      Bold: "font-bold",
-    },
-    color: {
-      Black: "text-black",
-      "Dark Gray": "text-gray-900",
-      Gray: "text-gray-600",
-      "Light Gray": "text-gray-400",
-      White: "text-white",
-      Blue: "text-blue-700",
-      "Dark Blue": "text-blue-900",
-    },
+    weight,
+    color,
   },
 });
 
@@ -51,26 +40,19 @@ export interface HeadingProps {
    * @displayName Text Color
    * @tooltip Controls the color of the text
    */
-  color?:
-    | "White"
-    | "Black"
-    | "Dark Gray"
-    | "Gray"
-    | "Light Gray"
-    | "Blue"
-    | "Dark Blue";
+  color?: Colors;
   /**
    * @displayName Font Weight
    * @tooltip Controls the font weight of the text
    */
-  weight?: "Normal" | "Semi Bold" | "Bold";
+  weight?: Weights;
 }
 
 export const initialProps: HeadingProps = {
   text: "Heading Text",
   rank: "1",
   align: "Left",
-  weight: "Normal",
+  weight: "Regular",
   color: "Dark Gray",
 };
 

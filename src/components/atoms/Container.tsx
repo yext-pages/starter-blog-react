@@ -10,6 +10,8 @@ import {
   marginBottom,
   marginTop,
   Sizes,
+  backgroundColor,
+  Colors,
 } from "../../sharedVariants";
 
 const containerVariants = cva("", {
@@ -65,15 +67,7 @@ const containerVariants = cva("", {
       XL: "max-w-5xl",
       None: "max-w-none",
     },
-    backgroundColor: {
-      Black: "bg-black",
-      "Dark Gray": "bg-gray-900",
-      Gray: "bg-gray-600",
-      "Light Gray": "bg-gray-400",
-      White: "bg-white",
-      Blue: "bg-blue-700",
-      "Dark Blue": "bg-blue-900",
-    },
+    backgroundColor,
   },
 });
 
@@ -88,14 +82,7 @@ export interface ContainerProps {
    * @displayName Background Color
    * @tooltip Controls the background color of the container
    */
-  backgroundColor?:
-    | "White"
-    | "Black"
-    | "Dark Gray"
-    | "Gray"
-    | "Light Gray"
-    | "Blue"
-    | "Dark Blue";
+  backgroundColor?: Colors;
   /**
    * @displayName Flex Gap
    * @tooltip Controls the amount of space between each item. NOTE: Does not work with grid layout

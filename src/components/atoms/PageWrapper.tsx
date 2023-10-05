@@ -1,17 +1,10 @@
 import { cva } from "cva";
 import { cn } from "../../utils/cn";
+import { Colors, backgroundColor } from "../../sharedVariants";
 
 const pageWrapperVariants = cva("relative min-h-screen", {
   variants: {
-    backgroundColor: {
-      Black: "bg-black",
-      "Dark Gray": "bg-gray-900",
-      Gray: "bg-gray-600",
-      "Light Gray": "bg-gray-400",
-      White: "bg-white",
-      Blue: "bg-blue-700",
-      "Dark Blue": "bg-blue-900",
-    },
+    backgroundColor,
   },
 });
 
@@ -20,14 +13,7 @@ export interface PageWrapperProps {
    * @displayName Background Color
    * @tooltip Defines the background color of the container
    */
-  backgroundColor?:
-    | "White"
-    | "Black"
-    | "Dark Gray"
-    | "Gray"
-    | "Light Gray"
-    | "Blue"
-    | "Dark Blue";
+  backgroundColor?: Colors;
   children?: React.ReactNode;
 }
 

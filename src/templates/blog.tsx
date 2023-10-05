@@ -75,13 +75,13 @@ export default function Blog({ document }: TemplateProps) {
               text={document.blogStarter_blogAuthor}
               color="Light Gray"
               weight="Light"
-              size="M"
+              textSize="M"
             />
             <HorizontalDivider height="16px" color="Light Gray" />
             <Date
               color="Light Gray"
               date={document.datePosted}
-              size="M"
+              textSize="M"
               weight="Light"
             />
           </Container>

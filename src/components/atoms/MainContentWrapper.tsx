@@ -1,5 +1,3 @@
-import { cn } from "../../utils/cn";
-
 export interface MainContentWrapperProps {
   children?: React.ReactNode;
 }

@@ -1,29 +1,19 @@
 import { cva } from "cva";
 import { cn } from "../../utils/cn";
+import {
+  Colors,
+  TextSizes,
+  Weights,
+  color,
+  textSize,
+  weight,
+} from "../../sharedVariants";
 
 const textVariants = cva("font-sans", {
   variants: {
-    color: {
-      Black: "text-black",
-      "Dark Gray": "text-gray-900",
-      Gray: "text-gray-600",
-      "Light Gray": "text-gray-400",
-      White: "text-white",
-      Blue: "text-blue-700",
-      "Dark Blue": "text-blue-900",
-    },
-    size: {
-      L: "text-lg leading-normal",
-      M: "text-base leading-normal",
-      S: "text-sm leading-normal",
-      XS: "text-xs leading-normal",
-    },
-    weight: {
-      Bold: "font-bold",
-      "Semi Bold": "font-semibold",
-      Regular: "font-regular",
-      Light: "font-light",
-    },
+    color,
+    textSize,
+    weight,
     align: {
       Left: "text-left",
       Center: "text-center",
@@ -58,12 +48,12 @@ export interface TextProps {
    * @displayName Size
    * @tooltip Controls the font size of the text
    */
-  size?: "XS" | "S" | "M" | "L";
+  textSize?: TextSizes;
   /**
    * @displayName Weight
    * @tooltip Controls the font weight of the text
    */
-  weight?: "Light" | "Regular" | "Semi Bold" | "Bold";
+  weight?: Weights;
   /**
    * @displayName Alignment
    * @tooltip Controls the alignment of the text
@@ -83,14 +73,7 @@ export interface TextProps {
    * @displayName Color
    * @tooltip Controls the color of the text
    */
-  color?:
-    | "White"
-    | "Black"
-    | "Dark Gray"
-    | "Gray"
-    | "Light Gray"
-    | "Blue"
-    | "Dark Blue";
+  color?: Colors;
   /**
    * @displayName Max Lines
    * @tooltip Controls the number of lines of text shown before truncation
@@ -100,7 +83,7 @@ export interface TextProps {
 
 export const initialProps: TextProps = {
   text: "Text goes here",
-  size: "M",
+  textSize: "M",
   weight: "Regular",
   align: "Left",
   italic: "No",
@@ -111,7 +94,7 @@ export const initialProps: TextProps = {
 
 const Text = ({
   text,
-  size,
+  textSize,
   weight,
   align,
   italic,
@@ -123,7 +106,7 @@ const Text = ({
     <p
       className={cn(
         textVariants({
-          size,
+          textSize,
           weight,
           align,
           italic,

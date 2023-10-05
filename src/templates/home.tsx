@@ -28,22 +28,11 @@ export const getPath: GetPath<TemplateProps> = ({ document }) => {
   return document.slug ?? "index.html";
 };
 
-export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (
-  data
-): HeadConfig => {
+export const getHeadConfig: GetHeadConfig<
+  TemplateRenderProps<{ name: string }>
+> = ({ document }): HeadConfig => {
   return {
     title: "Blog Home",
-    charset: "UTF-8",
-    viewport: "width=device-width, initial-scale=1",
-    tags: [
-      {
-        type: "link",
-        attributes: {
-          rel: "stylesheet",
-          href: "https://rsms.me/inter/inter.css",
-        },
-      },
-    ],
   };
 };
 

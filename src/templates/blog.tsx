@@ -47,22 +47,11 @@ export const getPath: GetPath<TemplateProps> = ({ document }) => {
   return document.slug ?? document.entityId.toString();
 };
 
-export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
-  document,
-}): HeadConfig => {
+export const getHeadConfig: GetHeadConfig<
+  TemplateRenderProps<{ name: string }>
+> = ({ document }): HeadConfig => {
   return {
     title: document.name,
-    charset: "UTF-8",
-    viewport: "width=device-width, initial-scale=1",
-    tags: [
-      {
-        type: "link",
-        attributes: {
-          rel: "stylesheet",
-          href: "https://rsms.me/inter/inter.css",
-        },
-      },
-    ],
   };
 };
 

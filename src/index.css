@@ -2,15 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-article h1,
-article h2,
-article h3,
-article h4,
-article h5,
-article h6,
-article p {
-  font-weight: revert !important;
-  font-size: revert !important;
-  margin: revert !important;
-  line-height: 2 !important;
+@font-face {
+  font-family: "Inter var";
+  src: url(./assets/fonts/Inter-VariableFont_slnt\wght.ttf);
 }

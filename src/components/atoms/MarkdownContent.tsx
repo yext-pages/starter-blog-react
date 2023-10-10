@@ -1,14 +1,17 @@
 import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 
 interface MarkdownContentProps {
+  /**
+   * @displayName Content
+   * @tooltip Controls the markdown content to display
+   */
   content: string;
 }
 
 const MarkdownContent = ({ content }: MarkdownContentProps) => {
   return (
-    <article className="prose lg:prose-xl">
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
+    <article className="prose">
+      <ReactMarkdown>{content}</ReactMarkdown>
     </article>
   );
 };

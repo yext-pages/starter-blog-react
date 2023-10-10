@@ -7,19 +7,18 @@ import {
   GetHeadConfig,
   HeadConfig,
 } from "@yext/pages";
-import React from "react";
-import MainLayout from "../components/MainLayout";
-import BigImage from "../components/BigImage";
-import ArticleContainer from "../components/ArticleContainer";
-import Title from "../components/Title";
-import MarkdownContent from "../components/MarkdownContent";
-import HorizontalStack from "../components/HorizontalStack";
-import Snippet from "../components/Snippet";
-import HorizontalDivider from "../components/HorizontalDivider";
-import Footer from "../components/Footer";
-import Date from "../components/Date";
-import ComplexHeader from "../components/ComplexHeader";
-import { AnalyticsProvider } from "@yext/sites-components";
+import Image from "../components/atoms/Image";
+import MarkdownContent from "../components/atoms/MarkdownContent";
+import HorizontalDivider from "../components/atoms/HorizontalDivider";
+import Date from "../components/atoms/Date";
+import Heading from "../components/atoms/Heading";
+import Container from "../components/atoms/Container";
+import Text from "../components/atoms/Text";
+import PageWrapper from "../components/atoms/PageWrapper";
+import MainContentWrapper from "../components/atoms/MainContentWrapper";
+import Header from "../components/molecules/Header";
+import Footer from "../components/molecules/Footer";
+import BackButton from "../components/atoms/BackButton";
 
 export const config: TemplateConfig = {
   stream: {
@@ -48,90 +47,61 @@ export const getPath: GetPath<TemplateProps> = ({ document }) => {
   return document.slug ?? document.entityId.toString();
 };
 
-export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (
-  data
-): HeadConfig => {
+export const getHeadConfig: GetHeadConfig<
+  TemplateRenderProps<{ name: string }>
+> = ({ document }): HeadConfig => {
   return {
-    title: "Blog Home",
-    charset: "UTF-8",
-    viewport: "width=device-width, initial-scale=1",
+    title: document.name,
   };
 };
 
-export default function Blog({ document, __meta }: TemplateProps) {
+export default function Blog({ document }: TemplateProps) {
   return (
-    <MainLayout backgroundColor="#FFFFFF">
-      <AnalyticsProvider
-        templateData={{ document: document, __meta: __meta }}
-        enableDebugging={true}
-      >
-        <ComplexHeader
-          backgroundColor="#FFFFFF"
-          textColor="#000000"
-          logo={document._site.logo.image.url}
-          link1={document._site.blogStarter_headerLinks[0].uRL}
-          link2={document._site.blogStarter_headerLinks[1].uRL}
-          link3={document._site.blogStarter_headerLinks[2].uRL}
-          link4={document._site.blogStarter_headerLinks[3].uRL}
-          label1={document._site.blogStarter_headerLinks[0].label}
-          label2={document._site.blogStarter_headerLinks[1].label}
-          label3={document._site.blogStarter_headerLinks[2].label}
-          label4={document._site.blogStarter_headerLinks[3].label}
-          companyScreenReaderText={document._site.logo.image.alternateText}
-          hoverColor="light"
-        />
-        <ArticleContainer>
-          <Title
-            value={document.name}
-            textSize="4xl"
-            fontWeight="bold"
-            topMargin="0"
-            bottomMargin="0"
-            textColor="#000000"
-          />
-          <HorizontalStack
-            spacing="0"
-            leftMargin="0"
-            rightMargin="0"
-            topMargin="2"
-            bottomMargin="4"
-            alignment="center"
-            verticalOnMobile="false"
-          >
-            <Snippet
+    <PageWrapper backgroundColor="White">
+      <Header logo="http://a.mktgcdn.com/p/86Moa_TLbLDstVl9pCx-CZwrroZevu43XtPiCZVCG3U/300x300.png" />
+      <MainContentWrapper>
+        <Container
+          layout="Column"
+          maxWidth="M"
+          flexGap="8"
+          marginTop="32px"
+          marginBottom="32px"
+          marginLeft="Auto"
+          marginRight="Auto"
+        >
+          <BackButton backToUrl="./index.html" />
+          <Container layout="Row" flexGap="2" itemAlignment="Center">
+            <Text
               text={document.blogStarter_blogAuthor}
-              textColor="#929191"
-              fontWeight="light"
-              textSize="base"
+              color="Light Gray"
+              weight="Light"
+              textSize="M"
             />
-            <HorizontalDivider dividerHeight="4" dividerColor="#929191" />
+            <HorizontalDivider height="16px" color="Light Gray" />
             <Date
-              textColor="#929191"
+              color="Light Gray"
               date={document.datePosted}
-              textSize="base"
-              fontWeight="light"
+              textSize="M"
+              weight="Light"
             />
-          </HorizontalStack>
-          <BigImage
+          </Container>
+          <Heading
+            text={document.name}
+            align="Left"
+            rank="1"
+            weight="Bold"
+            color="Dark Gray"
+          />
+          <Image
             src={document.primaryPhoto.image.url}
             alt={document.primaryPhoto.image.alternateText}
+            aspect="Rectangle"
+            size="Large"
           />
           <MarkdownContent content={document.blogStarter_body.markdown} />
-        </ArticleContainer>
-        <Footer
-          link1={document._site.blogStarter_footerLinks[0].uRL}
-          link2={document._site.blogStarter_footerLinks[1].uRL}
-          link3={document._site.blogStarter_footerLinks[2].uRL}
-          link4={document._site.blogStarter_footerLinks[3].uRL}
-          label1={document._site.blogStarter_footerLinks[0].label}
-          label2={document._site.blogStarter_footerLinks[1].label}
-          label3={document._site.blogStarter_footerLinks[2].label}
-          label4={document._site.blogStarter_footerLinks[3].label}
-          backgroundColor="#FFFFFF"
-          textColor="#000000"
-          hoverColor="light"
-        />
-      </AnalyticsProvider>
-    </MainLayout>
+        </Container>
+      </MainContentWrapper>
+      <Footer />
+    </PageWrapper>
   );
 }

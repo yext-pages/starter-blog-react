@@ -14,7 +14,7 @@ const navigation = [
   { label: "About", uRL: "#" },
   { label: "Membership", uRL: "#" },
   { label: "Contribute", uRL: "#" },
-  { label: "Login", uRL: "#" },
+  { label: "Contact", uRL: "#" },
 ];
 
 export default function Header({ logo }: HeaderProps) {

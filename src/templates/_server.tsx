@@ -1,11 +1,16 @@
 import * as ReactDOMServer from "react-dom/server";
 import { PageContext } from "@yext/pages";
+import { AnalyticsProvider } from "@yext/sites-components";
 
 export { render };
 
 const render = async (pageContext: PageContext<any>) => {
   const { Page, pageProps } = pageContext;
-  const viewHtml = ReactDOMServer.renderToString(<Page {...pageProps} />);
+  const viewHtml = ReactDOMServer.renderToString(
+    <AnalyticsProvider templateData={pageProps} enableDebugging={true}>
+      <Page {...pageProps} />
+    </AnalyticsProvider>
+  );
   return `<!DOCTYPE html>
     <html lang="<!--app-lang-->">
       <head>

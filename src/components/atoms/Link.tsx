@@ -33,7 +33,7 @@ export interface LinkProps {
    * @displayName Analytics Label
    * @tooltip Controls the label the click is tagged with in analytics
    */
-  analyticsLabel?: "string";
+  analyticsLabel?: string;
   /**
    * @displayName Variant
    * @tooltip Controls the style of the link
@@ -51,7 +51,7 @@ const Link = ({ children, url, analyticsLabel, variant, shape }: LinkProps) => {
     <SitesLink
       href={url}
       className={cn(linkVariants({ variant, shape }))}
-      eventName={analyticsLabel ?? "linkClick"}
+      eventName={analyticsLabel ?? "blog-click"}
     >
       {children}
     </SitesLink>

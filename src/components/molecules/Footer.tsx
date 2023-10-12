@@ -1,3 +1,5 @@
+import { Link } from "@yext/sites-components";
+
 export default function Footer() {
   const navigation = {
     main: [
@@ -82,25 +84,27 @@ export default function Footer() {
         >
           {navigation.main.map((item: { label: string; uRL: string }) => (
             <div key={item.label} className="pb-6">
-              <a
+              <Link
                 href={item.uRL}
                 className="text-sm leading-6 text-gray-600 hover:text-gray-400"
+                eventName={`footer${item.label}`}
               >
                 {item.label}
-              </a>
+              </Link>
             </div>
           ))}
         </nav>
         <div className="mt-10 flex justify-center space-x-10">
           {navigation.social.map((item) => (
-            <a
+            <Link
               key={item.name}
               href={item.href}
               className="text-gray-600 hover:text-gray-400"
+              eventName={`footer${item.name}`}
             >
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />
-            </a>
+            </Link>
           ))}
         </div>
         <p className="mt-10 text-center text-xs leading-5 text-gray-400">

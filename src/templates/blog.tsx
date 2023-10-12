@@ -70,7 +70,12 @@ export default function Blog({ document }: TemplateProps) {
           marginLeft="Auto"
           marginRight="Auto"
         >
-          <Link url="/index.html" variant="button-light" shape="round">
+          <Link
+            url="/index.html"
+            variant="button-light"
+            shape="round"
+            analyticsLabel="backclick"
+          >
             <ArrowIcon height="10px" />
           </Link>
           <Container layout="Row" flexGap="2" itemAlignment="Center">

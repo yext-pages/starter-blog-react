@@ -96,7 +96,7 @@ const FeaturedBlog = ({
           weight="Light"
         />
         <Container layout="Column" flexGap="2">
-          <Link url={`./${slug}`}>
+          <Link url={`./${slug}`} analyticsLabel={`featuredblogclick`}>
             <Heading rank={titleRank} weight="Semi Bold" text={name || ""} />
           </Link>
           <Text

@@ -1,5 +1,5 @@
 import { cva } from "cva";
-import { cn } from "../../utils/cn";
+import { cn } from "../../utils";
 import { Colors, Weights, color, weight } from "../../sharedVariants";
 
 const headingVariants = cva("tracking-tight", {

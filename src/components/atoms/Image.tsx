@@ -1,5 +1,5 @@
 import { cva } from "cva";
-import { cn } from "../../utils/cn";
+import { cn } from "../../utils";
 
 const imageVariants = cva(
   "h-full w-full rounded-md object-cover object-center",

@@ -1,6 +1,5 @@
-import { formatDate } from "../../utils/formatDate";
 import { cva } from "cva";
-import { cn } from "../../utils/cn";
+import { cn, formatDate } from "../../utils";
 import {
   Colors,
   TextSizes,

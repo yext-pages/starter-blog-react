@@ -18,7 +18,8 @@ import PageWrapper from "../components/atoms/PageWrapper";
 import MainContentWrapper from "../components/atoms/MainContentWrapper";
 import Header from "../components/molecules/Header";
 import Footer from "../components/molecules/Footer";
-import BackButton from "../components/atoms/BackButton";
+import Link from "../components/atoms/Link";
+import ArrowIcon from "../components/atoms/ArrowIcon";
 
 export const config: TemplateConfig = {
   stream: {
@@ -69,7 +70,9 @@ export default function Blog({ document }: TemplateProps) {
           marginLeft="Auto"
           marginRight="Auto"
         >
-          <BackButton backToUrl="./index.html" />
+          <Link url="/index.html" variant="button-light" shape="round">
+            <ArrowIcon height="10px" />
+          </Link>
           <Container layout="Row" flexGap="2" itemAlignment="Center">
             <Text
               text={document.blogStarter_blogAuthor}

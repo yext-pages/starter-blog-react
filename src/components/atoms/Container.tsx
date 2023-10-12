@@ -1,5 +1,5 @@
 import { cva } from "cva";
-import { cn } from "../../utils/cn";
+import { cn } from "../../utils";
 import {
   paddingLeft,
   paddingBottom,

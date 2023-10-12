@@ -15,6 +15,7 @@ export type Sizes =
   | "0px"
   | "4px"
   | "8px"
+  | "10px"
   | "16px"
   | "24px"
   | "32px"
@@ -31,6 +32,7 @@ export const paddingRight = {
   "0px": "pr-0",
   "4px": "pr-1",
   "8px": "pr-2",
+  "10px": "pr-3",
   "16px": "pr-4",
   "24px": "pr-6",
   "32px": "pr-8",
@@ -48,6 +50,7 @@ export const paddingLeft = {
   "0px": "pl-0",
   "4px": "pl-1",
   "8px": "pl-2",
+  "10px": "pl-3",
   "16px": "pl-4",
   "24px": "pl-6",
   "32px": "pl-8",
@@ -65,6 +68,7 @@ export const paddingTop = {
   "0px": "pt-0",
   "4px": "pt-1",
   "8px": "pt-2",
+  "10px": "pt-3",
   "16px": "pt-4",
   "24px": "pt-6",
   "32px": "pt-8",
@@ -82,6 +86,7 @@ export const paddingBottom = {
   "0px": "pb-0",
   "4px": "pb-1",
   "8px": "pb-2",
+  "10px": "pb-3",
   "16px": "pb-4",
   "24px": "pb-6",
   "32px": "pb-8",
@@ -99,6 +104,7 @@ export const marginLeft = {
   "0px": "ml-0",
   "4px": "ml-1",
   "8px": "ml-2",
+  "10px": "ml-3",
   "16px": "ml-4",
   "24px": "ml-6",
   "32px": "ml-8",
@@ -117,6 +123,7 @@ export const marginRight = {
   "0px": "mr-0",
   "4px": "mr-1",
   "8px": "mr-2",
+  "10px": "mr-3",
   "16px": "mr-4",
   "24px": "mr-6",
   "32px": "mr-8",
@@ -135,6 +142,7 @@ export const marginTop = {
   "0px": "mt-0",
   "4px": "mt-1",
   "8px": "mt-2",
+  "10px": "mt-3",
   "16px": "mt-4",
   "24px": "mt-6",
   "32px": "mt-8",
@@ -152,6 +160,7 @@ export const marginBottom = {
   "0px": "mb-0",
   "4px": "mb-1",
   "8px": "mb-2",
+  "10px": "mb-3",
   "16px": "mb-4",
   "24px": "mb-6",
   "32px": "mb-8",
@@ -196,6 +205,7 @@ export const height = {
   "0px": "h-0",
   "4px": "h-1",
   "8px": "h-2",
+  "10px": "h-3",
   "16px": "h-4",
   "24px": "h-6",
   "32px": "h-8",

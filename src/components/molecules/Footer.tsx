@@ -86,7 +86,7 @@ export default function Footer() {
             <div key={item.label} className="pb-6">
               <Link
                 href={item.uRL}
-                className="text-sm leading-6 text-gray-600 hover:text-gray-400"
+                className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                 eventName={`footer${item.label}`}
               >
                 {item.label}
@@ -99,7 +99,7 @@ export default function Footer() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-gray-600 hover:text-gray-400"
+              className="text-gray-400 hover:text-gray-900"
               eventName={`footer${item.name}`}
             >
               <span className="sr-only">{item.name}</span>
@@ -107,7 +107,7 @@ export default function Footer() {
             </Link>
           ))}
         </div>
-        <p className="mt-10 text-center text-xs leading-5 text-gray-400">
+        <p className="mt-10 text-center text-xs leading-5 text-gray-500">
           &copy; 2020 Your Company, Inc. All rights reserved.
         </p>
       </div>

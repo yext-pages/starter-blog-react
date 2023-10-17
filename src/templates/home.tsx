@@ -25,7 +25,7 @@ export const config: TemplateConfig = {
   },
 };
 export const getPath: GetPath<TemplateProps> = ({ document }) => {
-  return document.slug ?? "index.html";
+  return document.slug ?? document.entityId.toString();
 };
 
 export const getHeadConfig: GetHeadConfig<

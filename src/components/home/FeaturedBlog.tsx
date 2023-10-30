@@ -1,9 +1,9 @@
-import Link from "../atoms/Link";
-import Date from "../atoms/Date";
-import Container from "../atoms/Container";
-import Text from "../atoms/Text";
-import Heading from "../atoms/Heading";
-import Image from "../atoms/Image";
+import Link from "../common/Link";
+import Date from "../common/Date";
+import Container from "../common/Container";
+import Text from "../common/Text";
+import Heading from "../common/Heading";
+import Image from "../common/Image";
 import { TextSizes } from "../../sharedVariants";
 
 interface FeaturedBlogProps {

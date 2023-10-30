@@ -1,11 +1,11 @@
-import Container from "../components/atoms/Container";
-import Heading from "../components/atoms/Heading";
-import Image from "../components/atoms/Image";
-import MainContentWrapper from "../components/atoms/MainContentWrapper";
-import PageWrapper from "../components/atoms/PageWrapper";
-import Text from "../components/atoms/Text";
-import Footer from "../components/molecules/Footer";
-import Header from "../components/molecules/Header";
+import Container from "../components/common/Container";
+import Heading from "../components/common/Heading";
+import Image from "../components/common/Image";
+import MainContentWrapper from "../components/common/MainContentWrapper";
+import PageWrapper from "../components/common/PageWrapper";
+import Text from "../components/common/Text";
+import Footer from "../components/common/Footer";
+import Header from "../components/common/Header";
 
 const BasicLayout = () => {
   return (

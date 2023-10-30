@@ -6,14 +6,14 @@ import {
   TemplateProps,
   TemplateRenderProps,
 } from "@yext/pages";
-import MainContentWrapper from "../components/atoms/MainContentWrapper";
-import Container from "../components/atoms/Container";
-import Heading from "../components/atoms/Heading";
-import Image from "../components/atoms/Image";
-import PageWrapper from "../components/atoms/PageWrapper";
-import FeaturedBlogsSection from "../components/molecules/FeaturedBlogsSection";
-import Footer from "../components/molecules/Footer";
-import Header from "../components/molecules/Header";
+import MainContentWrapper from "../components/common/MainContentWrapper";
+import Container from "../components/common/Container";
+import Heading from "../components/common/Heading";
+import Image from "../components/common/Image";
+import PageWrapper from "../components/common/PageWrapper";
+import FeaturedBlogsSection from "../components/home/FeaturedBlogsSection";
+import Footer from "../components/common/Footer";
+import Header from "../components/common/Header";
 import "../index.css";
 
 export const config: TemplateConfig = {
@@ -25,7 +25,7 @@ export const config: TemplateConfig = {
   },
 };
 export const getPath: GetPath<TemplateProps> = ({ document }) => {
-  return document.slug ?? "index.html";
+  return document.slug ?? document.entityId.toString();
 };
 
 export const getHeadConfig: GetHeadConfig<

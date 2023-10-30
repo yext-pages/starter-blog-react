@@ -7,18 +7,19 @@ import {
   GetHeadConfig,
   HeadConfig,
 } from "@yext/pages";
-import Image from "../components/atoms/Image";
-import MarkdownContent from "../components/atoms/MarkdownContent";
-import HorizontalDivider from "../components/atoms/HorizontalDivider";
-import Date from "../components/atoms/Date";
-import Heading from "../components/atoms/Heading";
-import Container from "../components/atoms/Container";
-import Text from "../components/atoms/Text";
-import PageWrapper from "../components/atoms/PageWrapper";
-import MainContentWrapper from "../components/atoms/MainContentWrapper";
-import Header from "../components/molecules/Header";
-import Footer from "../components/molecules/Footer";
-import BackButton from "../components/atoms/BackButton";
+import Image from "../components/common/Image";
+import MarkdownContent from "../components/common/MarkdownContent";
+import HorizontalDivider from "../components/common/HorizontalDivider";
+import Date from "../components/common/Date";
+import Heading from "../components/common/Heading";
+import Container from "../components/common/Container";
+import Text from "../components/common/Text";
+import PageWrapper from "../components/common/PageWrapper";
+import MainContentWrapper from "../components/common/MainContentWrapper";
+import Header from "../components/common/Header";
+import Footer from "../components/common/Footer";
+import Link from "../components/common/Link";
+import ArrowIcon from "../components/blog/ArrowIcon";
 
 export const config: TemplateConfig = {
   stream: {
@@ -69,7 +70,14 @@ export default function Blog({ document }: TemplateProps) {
           marginLeft="Auto"
           marginRight="Auto"
         >
-          <BackButton backToUrl="./index.html" />
+          <Link
+            url="/index.html"
+            variant="button-light"
+            shape="round"
+            analyticsLabel="backclick"
+          >
+            <ArrowIcon height="10px" />
+          </Link>
           <Container layout="Row" flexGap="2" itemAlignment="Center">
             <Text
               text={document.blogStarter_blogAuthor}

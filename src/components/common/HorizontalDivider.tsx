@@ -1,5 +1,5 @@
 import { cva } from "cva";
-import { cn } from "../../utils/cn";
+import { cn } from "../../utils";
 import { Colors, Sizes, backgroundColor, height } from "../../sharedVariants";
 
 const horizontalDividerVariants = cva("w-0.5 rounded-full", {

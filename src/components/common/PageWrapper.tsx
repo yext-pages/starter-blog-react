@@ -1,5 +1,5 @@
 import { cva } from "cva";
-import { cn } from "../../utils/cn";
+import { cn } from "../../utils";
 import { Colors, backgroundColor } from "../../sharedVariants";
 
 const pageWrapperVariants = cva("relative min-h-screen", {

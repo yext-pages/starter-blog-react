@@ -1,4 +1,4 @@
-import Container from "../atoms/Container";
+import Container from "../common/Container";
 import FeaturedBlog from "./FeaturedBlog";
 
 export interface FeaturedBlogsSectionProps {
